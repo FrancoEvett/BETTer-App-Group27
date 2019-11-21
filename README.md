@@ -4,8 +4,11 @@ Group27 BETTer project Repository
 Current Project Status - 
 
 Plannig Stage	| InProgress
+
 Development	  | N/A		
+
 Testing		    | N/A
+
 Documentation	| InProgress
 
 Current Goals:
