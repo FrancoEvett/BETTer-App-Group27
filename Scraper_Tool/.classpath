@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Selenium/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/selenium-server-standalone-3.141.59 (2).jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/libs/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/libs/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/commons-codec-1.11.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/commons-lang3-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/commons-net-3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/commons-text-1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/dec-0.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/htmlunit-2.36.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/htmlunit-core-js-2.36.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/htmlunit-cssparser-1.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/httpclient-4.5.9.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/httpcore-4.4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/httpmime-4.5.9.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/jetty-client-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/jetty-http-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/jetty-io-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/jetty-util-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/jetty-xml-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/neko-htmlunit-2.36.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/websocket-api-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/websocket-client-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/websocket-common-9.4.20.v20190813.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/xercesImpl-2.12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/htmlunit-2.36.0/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
