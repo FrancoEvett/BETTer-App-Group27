@@ -8,7 +8,7 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="213dp"
+        android:layout_width="409dp"
         android:layout_height="35dp"
         android:background="@android:color/holo_green_dark"
         android:onClick="sign_up"
