@@ -3,8 +3,6 @@ package com.example.better;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.better.ui.BackgroundTask;
-import com.example.better.ui.DatabaseController;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -23,26 +21,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.Date;
-import java.util.InputMismatchException;
 
 public class better extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
 
-    TextView displayTimetbale;
+  public static  TextView displayTimetbale;
 
 
     @Override
@@ -72,12 +66,12 @@ public class better extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        //Pruthvi's Coding
 
-        displayTimetbale = findViewById(R.id.displayInfo);
 
-        timetableShow();
-        //-=---=-=---=-=-=-=-
+        //-=-=-=-Pruthvi Code -=-=-=//
+        displayTimetbale = (TextView) findViewById(R.id.displayInfo);
+        //=-=-=-=--=--=//
+
     }
 
     @Override
@@ -107,26 +101,17 @@ public class better extends AppCompatActivity {
         ImageView day = (ImageView) findViewById(R.id.dailytt);
         week.setVisibility(View.INVISIBLE);
         day.setVisibility(View.VISIBLE);
-    }
 
-    //Pruthvi's Coding   -=--=--=--=-=--=-=-=-=-=-=-=//
-    public void timetableShow(){
-        //Send current/date from here plz
 
-        DateFormat dateFormat = new SimpleDateFormat("dd-/MM-yyyy");
-        Date date1 = new Date();
-        String date = (dateFormat.format(date1));
-        String day = "Friday";
-        DatabaseController databaseController = new DatabaseController();
-        displayTimetbale.setText(databaseController.starter(day,date));
+
 
     }
-    //-=---=-=---=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-//
 
     public void exit (View view){
 
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);
+
     }
 
     public void go_home (View view){
