@@ -3,6 +3,8 @@ package com.example.better;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.better.ui.BackgroundTask;
+import com.example.better.ui.DatabaseController;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -29,11 +31,19 @@ import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.InputMismatchException;
 
 public class better extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+
+
+    TextView displayTimetbale;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +71,13 @@ public class better extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        //Pruthvi's Coding
+
+        displayTimetbale = findViewById(R.id.displayInfo);
+
+        timetableShow();
+        //-=---=-=---=-=-=-=-
     }
 
     @Override
@@ -91,6 +108,20 @@ public class better extends AppCompatActivity {
         week.setVisibility(View.INVISIBLE);
         day.setVisibility(View.VISIBLE);
     }
+
+    //Pruthvi's Coding   -=--=--=--=-=--=-=-=-=-=-=-=//
+    public void timetableShow(){
+        //Send current/date from here plz
+
+        DateFormat dateFormat = new SimpleDateFormat("dd-/MM-yyyy");
+        Date date1 = new Date();
+        String date = (dateFormat.format(date1));
+        String day = "Friday";
+        DatabaseController databaseController = new DatabaseController();
+        displayTimetbale.setText(databaseController.starter(day,date));
+
+    }
+    //-=---=-=---=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-//
 
     public void exit (View view){
 
