@@ -33,6 +33,19 @@
         app:layout_constraintVertical_bias="0.797" />
 
     <Button
+        android:id="@+id/query"
+        android:layout_width="136dp"
+        android:layout_height="69dp"
+        android:onClick="onTimetable"
+        android:text="Query"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
         android:id="@+id/button2"
         android:layout_width="133dp"
         android:layout_height="64dp"
@@ -68,13 +81,14 @@
         app:srcCompat="@drawable/daytimetable" />
 
     <TextView
-        android:id="@+id/displayInfo"
-        android:layout_width="406dp"
-        android:layout_height="435dp"
+        android:id="@+id/displayInfo1"
+        android:layout_width="400dp"
+        android:layout_height="389dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.233" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

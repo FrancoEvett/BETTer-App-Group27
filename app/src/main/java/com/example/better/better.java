@@ -36,7 +36,7 @@ public class better extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
 
 
-  public static  TextView displayTimetbale;
+    public static TextView displayTimetable;
 
 
     @Override
@@ -68,9 +68,6 @@ public class better extends AppCompatActivity {
 
 
 
-        //-=-=-=-Pruthvi Code -=-=-=//
-        displayTimetbale = (TextView) findViewById(R.id.displayInfo);
-        //=-=-=-=--=--=//
 
     }
 
@@ -92,8 +89,16 @@ public class better extends AppCompatActivity {
     public void weeklyimage (View view){
         ImageView week = (ImageView) findViewById(R.id.weeklytt);
         ImageView day = (ImageView) findViewById(R.id.dailytt);
+
         day.setVisibility(View.INVISIBLE);
         week.setVisibility(View.VISIBLE);
+
+        //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Pruthvi's Code -=--=--=-=-=-=-=-=-=-//
+        displayTimetable = (TextView) findViewById(R.id.displayInfo1);
+        displayTimetable.setVisibility(View.INVISIBLE);
+        //-=-=-=-=-=-=-==-==---==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=//
+
+
     }
 
     public void dailyimage (View view) {
@@ -102,10 +107,31 @@ public class better extends AppCompatActivity {
         week.setVisibility(View.INVISIBLE);
         day.setVisibility(View.VISIBLE);
 
-
-
+        //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Pruthvi's Code -=--=--=-=-=-=-=-=-=-//
+        displayTimetable = (TextView) findViewById(R.id.displayInfo1);
+        displayTimetable.setVisibility(View.INVISIBLE);
+        //-=-=-=-=-=-=-==-==---==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=//
 
     }
+
+
+
+    //-=-=-=-=-=-=-==-==---= Pruthvi's Code -=-=-=-=-=-=-==-=-=//
+    public void onTimetable(View view){
+        ImageView week = (ImageView) findViewById(R.id.weeklytt);
+        ImageView day = (ImageView) findViewById(R.id.dailytt);
+        week.setVisibility(View.INVISIBLE);
+        day.setVisibility(View.INVISIBLE);
+        displayTimetable = (TextView) findViewById(R.id.displayInfo1);
+        displayTimetable.setVisibility(View.VISIBLE);
+        String type = "timetable";
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        Date date1 = new Date();
+        String date = (dateFormat.format(date1));
+        BackgroundTask backgroundTask = new BackgroundTask(this, displayTimetable);
+        backgroundTask.execute(type, date);
+    }
+    //-=-=-=-=-=-=-==-==---==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=//
 
     public void exit (View view){
 
