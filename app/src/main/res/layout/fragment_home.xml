@@ -5,6 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/Tuesday"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="Tuesday"
+        android:text="TUE"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/Wednesday"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="Wednesday"
+        android:text="WED"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/Thursday"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="Thursday"
+        android:text="THU"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/Friday"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="Friday"
+        android:text="FRI"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"
@@ -20,75 +80,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="136dp"
-        android:layout_height="69dp"
-        android:onClick="dailyimage"
-        android:text="Daily"
+        android:id="@+id/Monday"
+        android:layout_width="70dp"
+        android:layout_height="44dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="Monday"
+        android:text="MON"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797" />
-
-    <Button
-        android:id="@+id/query"
-        android:layout_width="136dp"
-        android:layout_height="69dp"
-        android:onClick="onTimetable"
-        android:text="Query"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="133dp"
-        android:layout_height="64dp"
-        android:onClick="weeklyimage"
-        android:text="Weekly"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.942"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799" />
-
-    <ImageView
-        android:id="@+id/weeklytt"
-        android:layout_width="406dp"
-        android:layout_height="347dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_home"
-        app:layout_constraintVertical_bias="0.276"
-        app:srcCompat="@drawable/weektimetable" />
-
-    <ImageView
-        android:id="@+id/dailytt"
-        android:layout_width="411dp"
-        android:layout_height="317dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_home"
-        app:layout_constraintVertical_bias="0.421"
-        app:srcCompat="@drawable/daytimetable" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <TextView
         android:id="@+id/displayInfo1"
-        android:layout_width="400dp"
-        android:layout_height="389dp"
+        android:layout_width="336dp"
+        android:layout_height="417dp"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintVertical_bias="0.764" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

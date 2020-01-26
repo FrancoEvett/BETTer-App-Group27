@@ -1,22 +1,18 @@
 package com.example.better;
-
-import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
@@ -27,7 +23,6 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
     String paredString = "";
     String fullString = "";
     String initial = "";
-
 
 
     BackgroundTask(Context ctx, TextView textView) {
@@ -76,13 +71,14 @@ public class BackgroundTask extends AsyncTask<String,Void,String> {
                     JSONObject jsonObject = (JSONObject) jsonArray.get(i);
 
 
-                    paredString = "Date: " + jsonObject.get("Date").toString() + "\n" +
+                    paredString =
+                        //    "Date: " + jsonObject.get("Date").toString() + "\n" +
                             "Activity: " + jsonObject.get("Activity").toString() + "\n" +
                             "Description: " + jsonObject.get("Description").toString() + "\n" +
                             "Start: " + jsonObject.get("Start").toString() + "\n" +
                             "End: " + jsonObject.get("End").toString() + "\n" +
-                            "Room: " + jsonObject.get("Room").toString() + "\n" +
-                            "Staff: " + jsonObject.get("Staff").toString() + "\n";
+                            "Room: " + jsonObject.get("Room").toString() + "\n";
+                       //    + "Staff: " + jsonObject.get("Staff").toString() + "\n";
 
                     fullString = fullString + paredString + "\n";
                 }
