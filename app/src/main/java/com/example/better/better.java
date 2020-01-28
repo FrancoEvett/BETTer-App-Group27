@@ -100,6 +100,7 @@ public class better extends AppCompatActivity {
         displayTimetable.append( "Activity: "+activity + "\n" +"Description: " + description + "\n" + "Start: "+ start + "\n" + "End: "+ end + "\n" +"Room: " +room + "\n\n");
     }
 
+    //
 
     public void exit (View view){
 
