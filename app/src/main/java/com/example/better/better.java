@@ -95,52 +95,11 @@ public class better extends AppCompatActivity {
     }
 
 
-    public void weeklyimage (View view){
-//        ImageView week = (ImageView) findViewById(R.id.weeklytt);
-//        ImageView day = (ImageView) findViewById(R.id.dailytt);
-
-//        day.setVisibility(View.INVISIBLE);
-//        week.setVisibility(View.VISIBLE);
-
-        //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Pruthvi's Code -=--=--=-=-=-=-=-=-=-//
-        displayTimetable = findViewById(R.id.displayInfo1);
-        displayTimetable.setVisibility(View.INVISIBLE);
-        //-=-=-=-=-=-=-==-==---==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=//
-
-
+    //Displaying the timetable info from here
+    public void displayMethod(String activity, String description, String start, String end, String room){
+        displayTimetable.append( "Activity: "+activity + "\n" +"Description: " + description + "\n" + "Start: "+ start + "\n" + "End: "+ end + "\n" +"Room: " +room + "\n\n");
     }
 
-    public void dailyimage (View view) {
-//        ImageView week = (ImageView) findViewById(R.id.weeklytt);
-//        ImageView day = (ImageView) findViewById(R.id.dailytt);
-//        week.setVisibility(View.INVISIBLE);
-//        day.setVisibility(View.VISIBLE);
-
-        //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=Pruthvi's Code -=--=--=-=-=-=-=-=-=-//
-        displayTimetable = findViewById(R.id.displayInfo1);
-        displayTimetable.setVisibility(View.INVISIBLE);
-        //-=-=-=-=-=-=-==-==---==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=//
-
-    }
-
-
-
-    //-=-=-=-=-=-=-==-==---= Pruthvi's Code -=-=-=-=-=-=-==-=-=//
-    public void onTimetable(View view){
-//        ImageView week = (ImageView) findViewById(R.id.weeklytt);
-//        ImageView day = (ImageView) findViewById(R.id.dailytt);
-//        week.setVisibility(View.INVISIBLE);
-//        day.setVisibility(View.INVISIBLE);
-        displayTimetable = findViewById(R.id.displayInfo1);
-        displayTimetable.setVisibility(View.VISIBLE);
-        String type = "timetable";
-        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-        Date date1 = new Date();
-        String date = (dateFormat.format(date1));
-        BackgroundTask backgroundTask = new BackgroundTask(this, displayTimetable);
-        backgroundTask.execute(type, date);
-    }
-    //-=-=-=-=-=-=-==-==---==-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=//
 
     public void exit (View view){
 
@@ -283,6 +242,7 @@ public class better extends AppCompatActivity {
     public void Monday (View view){
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
+        displayTimetable.setText("");
         displayTimetable.setMovementMethod(new ScrollingMovementMethod());
         String type = "timetable";
         BackgroundTask back = new BackgroundTask(this, displayTimetable);
@@ -330,6 +290,7 @@ public class better extends AppCompatActivity {
     public void Tuesday (View view){
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
+        displayTimetable.setText("");
         displayTimetable.setMovementMethod(new ScrollingMovementMethod());
         String type = "timetable";
         BackgroundTask back = new BackgroundTask(this, displayTimetable);
@@ -377,6 +338,7 @@ public class better extends AppCompatActivity {
     public void Wednesday (View view){
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
+        displayTimetable.setText("");
         displayTimetable.setMovementMethod(new ScrollingMovementMethod());
         String type = "timetable";
         BackgroundTask back = new BackgroundTask(this, displayTimetable);
@@ -424,6 +386,7 @@ public class better extends AppCompatActivity {
     public void Thursday (View view){
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
+        displayTimetable.setText("");
         displayTimetable.setMovementMethod(new ScrollingMovementMethod());
         String type = "timetable";
         BackgroundTask back = new BackgroundTask(this, displayTimetable);
@@ -471,6 +434,7 @@ public class better extends AppCompatActivity {
     public void Friday (View view){
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
+        displayTimetable.setText("");
         displayTimetable.setMovementMethod(new ScrollingMovementMethod());
         String type = "timetable";
         BackgroundTask back = new BackgroundTask(this, displayTimetable);
