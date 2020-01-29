@@ -95,10 +95,10 @@ public class better extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public void better(){
-        Displayatbeg();
-    }
+//    @RequiresApi(api = Build.VERSION_CODES.O)
+//    public void better(){
+//        Displayatbeg();
+//    }
 
 
     int Lab2001;
@@ -391,6 +391,7 @@ public class better extends AppCompatActivity {
             Date dt = c.getTime();
             String cdate = changeformat(dt);
             back.execute(type,cdate);
+
         }
         else if(date.equals("Thu")){
             c.add(Calendar.DAY_OF_WEEK,-1);
