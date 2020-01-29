@@ -1,5 +1,6 @@
 package com.example.better;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
@@ -94,6 +95,17 @@ public class better extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void better(){
+        Displayatbeg();
+    }
+
+
+    int Lab2001;
+    int Lab2002;
+    int Lab2003;
+    int Lab2004;
+    int Lab2005;
 
     public void weeklyimage (View view){
 //        ImageView week = (ImageView) findViewById(R.id.weeklytt);
@@ -278,6 +290,18 @@ public class better extends AppCompatActivity {
         return cdate;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void Displayatbeg(){
+        displayTimetable = (TextView) findViewById(R.id.displayInfo1);
+        displayTimetable.setVisibility(View.VISIBLE);
+        displayTimetable.setMovementMethod(new ScrollingMovementMethod());
+        String type = "timetable";
+        BackgroundTask back = new BackgroundTask(this, displayTimetable);
+        Calendar c = CurrentDate();
+        Date dt = c.getTime();
+        String cdate = changeformat(dt);
+        back.execute(type, cdate);
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Monday (View view){
@@ -320,6 +344,11 @@ public class better extends AppCompatActivity {
         }
         else if(date.equals("Sun")){
             c.add(Calendar.DAY_OF_WEEK,+1);
+            Date dt = c.getTime();
+            String cdate = changeformat(dt);
+            back.execute(type,cdate);
+        }
+        else {
             Date dt = c.getTime();
             String cdate = changeformat(dt);
             back.execute(type,cdate);
@@ -372,6 +401,11 @@ public class better extends AppCompatActivity {
             String cdate = changeformat(dt);
             back.execute(type,cdate);
         }
+        else {
+            Date dt = c.getTime();
+            String cdate = changeformat(dt);
+            back.execute(type,cdate);
+        }
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Wednesday (View view){
@@ -415,6 +449,11 @@ public class better extends AppCompatActivity {
         }
         else if(date.equals("Sun")){
             c.add(Calendar.DAY_OF_WEEK,+3);
+            Date dt = c.getTime();
+            String cdate = changeformat(dt);
+            back.execute(type,cdate);
+        }
+        else {
             Date dt = c.getTime();
             String cdate = changeformat(dt);
             back.execute(type,cdate);
@@ -466,6 +505,11 @@ public class better extends AppCompatActivity {
             String cdate = changeformat(dt);
             back.execute(type,cdate);
         }
+        else {
+            Date dt = c.getTime();
+            String cdate = changeformat(dt);
+            back.execute(type,cdate);
+        }
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Friday (View view){
@@ -513,62 +557,84 @@ public class better extends AppCompatActivity {
             String cdate = changeformat(dt);
             back.execute(type,cdate);
         }
+        else {
+            Date dt = c.getTime();
+            String cdate = changeformat(dt);
+            back.execute(type,cdate);
+        }
     }
 
     public void Enter (View view){
+        int empty=0;
         EditText cs1 = findViewById(R.id.editText);
         EditText cs2 = findViewById(R.id.editText2);
         EditText cs3 = findViewById(R.id.editText3);
         EditText cs4 = findViewById(R.id.editText4);
         EditText cs5 = findViewById(R.id.editText5);
-        cs1.setText("Updated");
-        cs2.setText("Updated");
-        cs3.setText("Updated");
-        cs4.setText("Updated");
-        cs5.setText("Updated");
-        int c1 = Integer.parseInt(cs1.getText().toString());
-        int c2 = Integer.parseInt(cs2.getText().toString());
-        int c3 = Integer.parseInt(cs3.getText().toString());
-        int c4 = Integer.parseInt(cs4.getText().toString());
-        int c5 = Integer.parseInt(cs5.getText().toString());
+        TextView display = findViewById(R.id.textView2);
 
-        SharedPreferences preference = getSharedPreferences("LABS", 0);
-        SharedPreferences.Editor editor = preference.edit();
-        editor.putInt("CS2001",c1);
-        editor.commit();
-        editor.putInt("CS2002",c2);
-        editor.commit();
-        editor.putInt("CS2003",c3);
-        editor.commit();
-        editor.putInt("CS2004",c4);
-        editor.commit();
-        editor.putInt("CS2005",c5);
-        editor.commit();
+            if (getLab1() != empty && getLab2() != empty && getLab3() != empty && getLab4() != empty && getLab5() != empty) {
+                display.setText(getLab1()+" "+getLab2()+" "+getLab3()+" "+getLab4()+" "+getLab5());
+//                cs2.setText(getLab2());
+//                cs3.setText(getLab3());
+//                cs4.setText(getLab4());
+//                cs5.setText(getLab5());
+            }
+            else{
+//            cs1.setText("Updated");
+//            cs2.setText("Updated");
+//            cs3.setText("Updated");
+//            cs4.setText("Updated");
+//            cs5.setText("Updated");
+            int c1 = Integer.parseInt(cs1.getText().toString());
+            int c2 = Integer.parseInt(cs2.getText().toString());
+            int c3 = Integer.parseInt(cs3.getText().toString());
+            int c4 = Integer.parseInt(cs4.getText().toString());
+            int c5 = Integer.parseInt(cs5.getText().toString());
+            SetLabs(c1,c2,c3,c4,c5);
+            display.setText(getLab1()+" "+getLab2()+" "+getLab3()+" "+getLab4()+" "+getLab5());
+        }
+    }
+
+    public void SetLabs(int c1, int c2, int c3, int c4, int c5){
+        try {
+            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preference.edit();
+            editor.putInt("CS2001", c1);
+            editor.putInt("CS2002", c2);
+            editor.putInt("CS2003", c3);
+            editor.putInt("CS2004", c4);
+            editor.putInt("CS2005", c5);
+            editor.apply();
+        }catch (Exception e){
+            TextView display = findViewById(R.id.textView2);
+            display.setText("ERROR idiot try again!");
+        }
     }
 
     public int getLab1(){
-        SharedPreferences preference = getSharedPreferences("LABS", 0);
-        int Lab2001 = preference.getInt("CS2001", 0);
+        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+        Lab2001 = preference.getInt("CS2001", 0);
         return Lab2001;
     }
     public int getLab2(){
-        SharedPreferences preference = getSharedPreferences("LABS", 0);
-        int Lab2002 = preference.getInt("CS2002", 0);
+        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+        Lab2002 = preference.getInt("CS2002", 0);
         return Lab2002;
     }
     public int getLab3(){
-        SharedPreferences preference = getSharedPreferences("LABS", 0);
-        int Lab2003 = preference.getInt("CS2003", 0);
+        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+        Lab2003 = preference.getInt("CS2003", 0);
         return Lab2003;
     }
     public int getLab4(){
-        SharedPreferences preference = getSharedPreferences("LABS", 0);
-        int Lab2004 = preference.getInt("CS2004", 0);
+        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+        Lab2004 = preference.getInt("CS2004", 0);
         return Lab2004;
     }
     public int getLab5(){
-        SharedPreferences preference = getSharedPreferences("LABS", 0);
-        int Lab2005 = preference.getInt("CS2005", 0);
+        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+        Lab2005 = preference.getInt("CS2005", 0);
         return Lab2005;
     }
 }

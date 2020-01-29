@@ -97,7 +97,7 @@
         android:id="@+id/button3"
         android:layout_width="124dp"
         android:layout_height="57dp"
-        android:onClick="enter"
+        android:onClick="Enter"
         android:text="ENTER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,8 +1,10 @@
 package com.example.better;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Base64;
@@ -23,6 +25,7 @@ import javax.crypto.spec.SecretKeySpec;
 public class MainActivity extends AppCompatActivity {
 static String username = "BETTer";
 static String password = "BETTer1";
+better b = new better();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ static String password = "BETTer1";
         setContentView(R.layout.activity_main);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void on_click (View view){
         EditText Username = (EditText) findViewById(R.id.Username);
         EditText Password = (EditText) findViewById(R.id.Password);
