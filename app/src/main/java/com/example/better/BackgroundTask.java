@@ -25,11 +25,10 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
     String paredString = "";
     String fullString = "";
     String initial = "";
-
+    better objBetter = new better();
 
     BackgroundTask(Context ctx, TextView textView) {
         this.context = ctx;
-
     }
 
     @Override
@@ -41,11 +40,6 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
                 //String link = "http://10.0.2.2/andriodApp/timetableQuery.php";
                 String link = "https://brunelbetterapp.000webhostapp.com/timetableQuery.php";
                 String date = voids[1];
-                String cs2001 = voids[2];
-                String cs2002 = voids[3];
-                String cs2003 = voids[4];
-                String cs2004 = voids[5];
-                String cs2005 = voids[6];
                 URL url = new URL(link);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
@@ -53,12 +47,7 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
                 httpURLConnection.setDoInput(true);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                String post_data = URLEncoder.encode("date", "UTF-8") + "=" + URLEncoder.encode(date, "UTF-8") + "&" +
-                        URLEncoder.encode("cs2001", "UTF-8") + "=" + URLEncoder.encode(cs2001, "UTF-8") + "&" +
-                        URLEncoder.encode("cs2002", "UTF-8") + "=" + URLEncoder.encode(cs2002, "UTF-8") + "&" +
-                        URLEncoder.encode("cs2003", "UTF-8") + "=" + URLEncoder.encode(cs2003, "UTF-8") + "&" +
-                        URLEncoder.encode("cs2004", "UTF-8") + "=" + URLEncoder.encode(cs2004, "UTF-8") + "&" +
-                        URLEncoder.encode("cs2005", "UTF-8") + "=" + URLEncoder.encode(cs2005, "UTF-8");
+                String post_data = URLEncoder.encode("date", "UTF-8") + "=" + URLEncoder.encode(date, "UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -82,22 +71,18 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject jsonObject = (JSONObject) jsonArray.get(i);
 
+                    // String Date =  jsonObject.get("Date").toString();
+                    String Activity =      jsonObject.get("Activity").toString();
+                    String Description =  jsonObject.get("Description").toString();
+                    String Start =  jsonObject.get("Start").toString();
+                    String End =  jsonObject.get("End").toString();
+                    String Room =  jsonObject.get("Room").toString();
+                    // String Staff =   jsonObject.get("Staff").toString();
 
-                    paredString =
-                            //    "Date: " + jsonObject.get("Date").toString() + "\n" +
-                            "Activity: " + jsonObject.get("Activity").toString() + "\n" +
-                                    "Description: " + jsonObject.get("Description").toString() + "\n" +
-                                    "Start: " + jsonObject.get("Start").toString() + "\n" +
-                                    "End: " + jsonObject.get("End").toString() + "\n" +
-                                    "Room: " + jsonObject.get("Room").toString() + "\n";
-                    //    + "Staff: " + jsonObject.get("Staff").toString() + "\n";
 
-                    fullString = fullString + paredString + "\n";
+                    //Passing the variables to displayMethod class
+                    objBetter.displayMethod( Activity,Description,Start,End,Room);
                 }
-
-
-                return fullString + " ";
-
 
             } catch (Exception e) {
                 e.printStackTrace();
@@ -113,18 +98,11 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPreExecute() {
-
-
     }
 
 
     @Override
     protected void onPostExecute(String fullString) {
-
-
-        better.displayTimetable.setText(this.fullString);
-
-
     }
 
 
