@@ -14,6 +14,7 @@ Documentation	| InProgress
 Current Goals:
 
 Requirements Specification    	- Romi
+
 Risk analysis            	      - Camron    
 GUI Design            		      - Anthony    
 Entity Relationship Diagram     - Anas        
