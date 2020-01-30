@@ -98,7 +98,7 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPreExecute() {
-        better.displayTimetable.setText("");
+        better.displayTimetable.setText(""); //
     }
 
 
