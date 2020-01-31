@@ -56,4 +56,14 @@ public class UserAccountControll {
 
     }
 
+    public void ReceiveUserInfo(String UserID, String UserName, String UserPassword, String UserEmail){
+
+
+    }
+
+
+
+
+
+
 }
