@@ -94,7 +94,7 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
 
 
         } else if (type.equals("register")) {
-            String register_url = "";
+            String register_url = "http://brunelbetterapp.000webhostapp.com/userRegister.php";
 
             try {
                 String studentID = voids[1];
