@@ -14,63 +14,47 @@ package com.example.better;
 
 public class UserAccountControll {
 
-    UserAccountControll(){
-        //class constructor
+    private DatabaseControllerUser databaseControllerUser = new DatabaseControllerUser(null);
+    private Account loggedINAccount;
 
+    //call this method to Login (Returns true id successful)
+    public boolean Login(String userID, String UserPassword){
+        //check if user is already logged in if so return false
+        if (loggedINAccount != null) { return false;}
+        //request user account details from database
+        Account account = databaseControllerUser.GetUserAccount(userID);
+        //now check if the account exists in the database
+        if (account == null){return false;}//user does not exist
+        //user exist in database, now check to see if passwords match
+        if (!account.TestPassword(UserPassword)){return false; }
+        //everything checks out allow the user to login
+        loggedINAccount = account;
+        return true;
     }
 
-    public boolean CreateUser() {
+    //call this method to logOut (Always successful)
+    public void LogOut(){
+        //log out the user
+        loggedINAccount = null;
+    }
+
+    //call this method to create a new account(Returns true id successful)
+    public boolean CreateNewAccount(String userID, String userName, String userEmail, String userPassword){
+        //compile a new account object
+        Account account = new Account(userID, userName, userEmail, userPassword);
+        if (databaseControllerUser.RegisterAccount(account)){
+            return true;
+        }
         return false;
     }
 
+    //call this method to change password (Returns True if successful and False if not)
+    public boolean ChangePassword(String userCurentPassword, String newPassword){
+        if (loggedINAccount == null){return false;}//user not logged in
+        if (!loggedINAccount.TestPassword(userCurentPassword)){return false;}//wrong current password
 
-    public Account CreateNewAccount(String userStudentID, String userName, String userEmail, String userPassword){
-
-        //create an account object from the parsed data
-        Account account = new Account(userStudentID, userName, userEmail, userPassword);
-
-
-
-
-        return null;
+        //everythn gis good go ahed and change the password
+        loggedINAccount.ChangePassword(newPassword);
+        return true;
     }
-
-    //call this method to log int the user
-    public boolean LoginUser(){
-        return false;
-    }
-
-    //call this method to log out the user
-    public boolean LogOut(){
-        return false;
-    }
-
-    //---------------------------------------------------------------------------------------------------
-    //----------------------------------BELOW THIS IS METHODS TO SAVE DATA-------------------------------
-    //---------------------------------------------------------------------------------------------------
-
-    //call this method to save load data from a binary file
-    private void LoadUserData(){
-
-    }
-
-    //call this method to save user data to a binary file
-    private void SaveUserData(Account account){
-
-        account.EncriptPassword();//encript the user password befor saving it
-
-        //the code to send a save query to the database
-    }
-
-    //call this method and parse the data from the database query
-    public void ReceiveUserInfo(boolean userExists, String UserID, String UserName, String UserEmail, String UserPassword){
-
-
-    }
-
-
-
-
-
-
 }

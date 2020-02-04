@@ -22,22 +22,17 @@ import java.net.URLEncoder;
 public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
 
     Context context;
-    String data;
-    UserAccountControll userAccountControll = new UserAccountControll();
 
+    //not sure why we need this but OK
     DatabaseControllerUser(Context ctx) {
         this.context = ctx;
 
     }
 
-    @Override
-    protected String doInBackground(String... voids) {
-        String type = voids[0];
-
-        if (type.equals("login")) {
-            String studentID = voids[1];
-            //???  String password = voids[2];
+    //the will get an account object from the database accoring to userID if exist and return null id does not exist
+    public Account GetUserAccount(String userID){
             String link = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
+            String data = "";
             try {
                 //Setting up connection to the link and then posting the data to the link (E.g. such as an API call)
                 URL url = new URL(link);
@@ -47,7 +42,7 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
                 httpURLConnection.setDoInput(true);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                String post_data = URLEncoder.encode("studentID", "UTF-8") + "=" + URLEncoder.encode(studentID, "UTF-8");
+                String post_data = URLEncoder.encode("studentID", "UTF-8") + "=" + URLEncoder.encode(userID, "UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -67,7 +62,6 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
                 inputStream.close();
                 httpURLConnection.disconnect();
 
-
                 //Parsing the JSON data into single variables by passing the data string
                 JSONArray jsonArray = new JSONArray(data);
                 for (int i = 0; i < jsonArray.length(); i++) {
@@ -78,9 +72,9 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
                     String userEmail = jsonObject.get("userEmail").toString();
                     String userPassword = jsonObject.get("userPassword").toString();
 
-
-                    //call the method ReceiveUserInfo to send data
-                    userAccountControll.ReceiveUserInfo(studentID, userName, userEmail, userPassword);
+                    //build a new account object and return it
+                    Account account = new Account(student_ID, userName, userEmail, userPassword);
+                    return account;
                 }
 
 
@@ -91,76 +85,63 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+            //if the process fails the return null
+            return null;
+    }
+    //this will add a new user to database from a account Object and if already exists return false and if successful return true;
+    public boolean RegisterAccount(Account account){
+        //remeber to NOT decript the password as it will need to be encrypted on teh database
+        String register_url = "http://brunelbetterapp.000webhostapp.com/userRegister.php";
 
+        try {
+            URL url = new URL(register_url);
+            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.setRequestMethod("POST");
+            httpURLConnection.setDoOutput(true);
+            httpURLConnection.setDoInput(true);
+            OutputStream outputStream = httpURLConnection.getOutputStream();
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+            String post_data = URLEncoder.encode("studentID", "UTF-8") + "=" + URLEncoder.encode(account.StudentID, "UTF-8") + "&"
+                    + URLEncoder.encode("userName", "UTF-8") + "=" + URLEncoder.encode(account.Name, "UTF-8") + "&"
+                    + URLEncoder.encode("userEmail", "UTF-8") + "=" + URLEncoder.encode(account.Email, "UTF-8") + "&"
+                    + URLEncoder.encode("userPassword", "UTF-8") + "=" + URLEncoder.encode(account.Password, "UTF-8");
+            bufferedWriter.write(post_data);
+            bufferedWriter.flush();
+            bufferedWriter.close();
+            outputStream.close();
 
-        } else if (type.equals("register")) {
-            String register_url = "http://brunelbetterapp.000webhostapp.com/userRegister.php";
-
-            try {
-                String studentID = voids[1];
-                String userName = voids[2];
-                String userEmail = voids[3];
-                String userPassword = voids[4];
-
-                URL url = new URL(register_url);
-                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-                httpURLConnection.setRequestMethod("POST");
-                httpURLConnection.setDoOutput(true);
-                httpURLConnection.setDoInput(true);
-                OutputStream outputStream = httpURLConnection.getOutputStream();
-                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                String post_data = URLEncoder.encode("studentID", "UTF-8") + "=" + URLEncoder.encode(studentID, "UTF-8") + "&"
-                        + URLEncoder.encode("userName", "UTF-8") + "=" + URLEncoder.encode(userName, "UTF-8") + "&"
-                        + URLEncoder.encode("userEmail", "UTF-8") + "=" + URLEncoder.encode(userEmail, "UTF-8") + "&"
-                        + URLEncoder.encode("userPassword", "UTF-8") + "=" + URLEncoder.encode(userPassword, "UTF-8");
-                bufferedWriter.write(post_data);
-                bufferedWriter.flush();
-                bufferedWriter.close();
-                outputStream.close();
-
-                //Reading the results
-                InputStream inputStream = httpURLConnection.getInputStream();
-                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
-                String result = "";
-                String line;
-                while ((line = bufferedReader.readLine()) != null) {
-                    result += line;
-                }
-                //Closing the connections
-                bufferedReader.close();
-                inputStream.close();
-                httpURLConnection.disconnect();
-
-
-                //sending true or false or any info
-                if(result.equals("User Exist")){
-                    return "User Exit";
-                }
-                else if(result.equals("User Added")){
-                    return "User Added";
-                }
-                else if(result.equals("Error")){
-                    return "Error";
-                }
-                return result;
-
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
+            //Reading the results
+            InputStream inputStream = httpURLConnection.getInputStream();
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+            String result = "";
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                result += line;
             }
+            //Closing the connections
+            bufferedReader.close();
+            inputStream.close();
+            httpURLConnection.disconnect();
 
-        }
+            //sending true or false or any info
+            if(result.equals("User Exist")){ return false;}
+            else if(result.equals("User Added")){return false;}
+            else if(result.equals("Error")){return false; }
 
+        } catch (MalformedURLException e) {e.printStackTrace();return false;} catch (IOException e) {e.printStackTrace(); return false;}
 
-        return null;
+        //if all is succesfull then return true
+        return true;
     }
 
 
+    //not sure why but ERRORS IF REMOVE
+    @Override
+    protected String doInBackground(String... voids) {
+        return null;
+    }
+    //not sure why but ERRORS IF REMOVE
     @Override
     protected void onPostExecute(String result) {
-
-            //send the info
-
     }
 }
