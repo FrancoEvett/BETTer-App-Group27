@@ -2,7 +2,6 @@ package com.example.better;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -27,7 +26,7 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
     String initial = "";
     better objBetter = new better();
 
-    BackgroundTask(Context ctx) {
+    BackgroundTask(Context ctx, TextView displayTimetable) {
         this.context = ctx;
     }
 
