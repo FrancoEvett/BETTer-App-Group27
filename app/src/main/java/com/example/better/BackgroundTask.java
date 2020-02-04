@@ -27,7 +27,7 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
     String initial = "";
     better objBetter = new better();
 
-    BackgroundTask(Context ctx, TextView textView) {
+    BackgroundTask(Context ctx) {
         this.context = ctx;
     }
 
