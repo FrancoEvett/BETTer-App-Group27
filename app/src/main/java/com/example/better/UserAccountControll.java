@@ -24,7 +24,7 @@ public class UserAccountControll {
     }
 
 
-    public Account CreateNewAccount(int userStudentID, String userName, String userEmail, String userPassword){
+    public Account CreateNewAccount(String userStudentID, String userName, String userEmail, String userPassword){
 
         //create an account object from the parsed data
         Account account = new Account(userStudentID, userName, userEmail, userPassword);
@@ -52,11 +52,15 @@ public class UserAccountControll {
     }
 
     //call this method to save user data to a binary file
-    private void SaveUserData(){
+    private void SaveUserData(Account account){
 
+        account.EncriptPassword();//encript the user password befor saving it
+
+        //the code to send a save query to the database
     }
 
-    public void ReceiveUserInfo(String UserID, String UserName, String UserEmail, String UserPassword){
+    //call this method and parse the data from the database query
+    public void ReceiveUserInfo(boolean userExists, String UserID, String UserName, String UserEmail, String UserPassword){
 
 
     }
