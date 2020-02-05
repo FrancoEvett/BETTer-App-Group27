@@ -9,10 +9,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.JPG" afterDir="false" />
+    <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="account class updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +21,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_26" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -47,45 +45,41 @@
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_better.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-              <folding>
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="62" lean-forward="true" selection-start-line="40" selection-end-line="41" selection-end-column="62" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/better_logo.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/better.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="272" column="60" selection-start-line="272" selection-start-column="60" selection-end-line="272" selection-end-column="60" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/drawables.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -93,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1124">
-              <caret line="163" selection-start-line="163" selection-end-line="163" />
+            <state relative-caret-position="68">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -143,13 +137,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/signup.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" />
       </list>
     </option>
   </component>
@@ -164,35 +157,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -200,7 +193,7 @@
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -209,7 +202,7 @@
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -219,7 +212,7 @@
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -230,7 +223,7 @@
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -238,18 +231,18 @@
             </path>
             <path>
               <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\pruth\AndroidStudioProjects\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="drawable-v24" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="drawable" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -258,7 +251,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-01-20T14:43:12.678Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
@@ -269,8 +262,8 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MagerXser\StudioProjects\BETTer-App-Group27\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\MagerXser\StudioProjects\BETTer-App-Group27\app\src\main\res\drawable" />
+      <recent name="C:\Users\MagerXser\StudioProjects\BETTer-App-Group27\app\src\main\res\drawable-v24" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -460,28 +453,7 @@
       <option name="project" value="LOCAL" />
       <updated>1580467166269</updated>
     </task>
-    <task id="LOCAL-00008" summary="account class updated">
-      <created>1580768022348</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1580768022348</updated>
-    </task>
-    <task id="LOCAL-00009" summary="account class updated">
-      <created>1580768361009</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1580768361009</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Logo Updated">
-      <created>1580821245935</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1580821245935</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -494,11 +466,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49825174" visible="true" weight="0.14179105" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49825174" visible="true" weight="0.2758389" />
       <window_info id="Structure" order="2" sideWeight="0.5034965" side_tool="true" weight="0.3295302" />
       <window_info id="Favorites" order="3" sideWeight="0.50174826" side_tool="true" weight="0.21543624" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -511,11 +482,11 @@
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49946696" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.3290461" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49840087" weight="0.32827735" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50319827" side_tool="true" weight="0.32690248" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4968017" visible="true" weight="0.32690248" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49413645" weight="0.2454448" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.3290461" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50516695" side_tool="true" visible="true" weight="0.04286828" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49731544" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Build" order="7" sideWeight="0.49483308" visible="true" weight="0.04249292" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.3295302" />
@@ -599,8 +570,7 @@
     <MESSAGE value="file updated with shared preferences" />
     <MESSAGE value="Again Updated my Version" />
     <MESSAGE value="account class updated" />
-    <MESSAGE value="Logo Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logo Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="account class updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,7 +583,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java</url>
-          <line>32</line>
+          <line>33</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -621,6 +591,57 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/graphics/Rect.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="e#616#617#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/view/ContextThemeWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#1796#0" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1557#1558#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/content/ContextWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding>
+            <element signature="e#1199#1200#0" expanded="true" />
+            <element signature="e#1250#1251#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+            <element signature="e#2104#2105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.0.2/e38e7c85994112b70d4548176128c72b8477c110/appcompat-1.0.2-sources.jar!/androidx/appcompat/app/AppCompatActivity.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.0.2/e38e7c85994112b70d4548176128c72b8477c110/appcompat-1.0.2-sources.jar!/androidx/appcompat/widget/VectorEnabledTintResources.java" />
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/app/Instrumentation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="209" column="16" selection-start-line="209" selection-start-column="16" selection-end-line="209" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -803,8 +824,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/better.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7582">
+          <caret line="485" column="8" selection-start-line="485" selection-start-column="8" selection-end-line="485" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -816,6 +868,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -824,13 +883,18 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/background.jpg" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/BETTer Logo.png" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/back_front.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_better.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background.png" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/images.jpg" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tools.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/signup.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -841,89 +905,26 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/drawables.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/BETTer Logo.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/loginbutton.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="1" selection-end-line="4" selection-end-column="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/Group 2.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/better_logo.JPG">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/newbackground.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/background.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/background.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="40" selection-end-column="53" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_better.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="83" column="17" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/better.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="272" column="60" selection-start-line="272" selection-start-column="60" selection-end-line="272" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tools.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1124">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" column="62" lean-forward="true" selection-start-line="40" selection-end-line="41" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding>
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
   </component>
 </project>
