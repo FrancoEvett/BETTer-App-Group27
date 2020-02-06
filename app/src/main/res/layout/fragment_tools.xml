@@ -83,8 +83,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="259dp"
-        android:layout_height="54dp"
+        android:layout_width="255dp"
+        android:layout_height="79dp"
         android:text="Enter the sequence number for each of your modules "
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
