@@ -49,14 +49,17 @@ UserAccountControll userAccountControll = new UserAccountControll();
         EditText Password = (EditText) findViewById(R.id.Password);
         String userName = Username.getText().toString();
         String passWord = Password.getText().toString();
-
-        if (userAccountControll.Login(userName, passWord)){
-            //login sucessfull
-        }else {
-            //login unsuccesful
+        TextView Error =  findViewById(R.id.errorMsg);
+        if (((userName == null) || (userName.isEmpty()== true)) || ((passWord == null) || (passWord.isEmpty() == true))){
+            Error.setText("Error");
+        }
+        else {
+            if (userAccountControll.Login(userName, passWord)){
 
         }
-    }
+            //login sucessfull
+
+    }}
 
     public void sign_new_account (View view){
         EditText ID = findViewById(R.id.studentID);
@@ -73,20 +76,24 @@ UserAccountControll userAccountControll = new UserAccountControll();
         ID.setText("");
         pass.setText("");
         repass.setText("");
-        if(password.equals(repeatpass) == true) {
-            if (userAccountControll.CreateNewAccount(id, userName , userEmail, password)){
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                // Adding all the data j
-            }else{
-                 message.setText("Error has occurred");
-            }
+        if(((password == null) || (password.isEmpty() == true))  || ((userEmail == null) || (userEmail.isEmpty() == true) ||  ((userName == null) || (userName.isEmpty() ==true)))){
+            //editetxt display enter somethigm
+            message.setText("Error");
         }
         else {
-            message.setText("The 2 passwords are not equal. Please try again!");
-            // If the password is not the same
+            if (password.equals(repeatpass) == true) {
+                if (userAccountControll.CreateNewAccount(id, userName, userEmail, password)) {
+                    Intent intent = new Intent(this, MainActivity.class);
+                    startActivity(intent);
+                    // Adding all the data j
+                } else {
+                    message.setText("Error has occurred");
+                }
+            } else {
+                message.setText("The 2 passwords are not equal. Please try again!");
+                // If the password is not the same
+            }
         }
-
     }
 
     public void sign_up (View view){

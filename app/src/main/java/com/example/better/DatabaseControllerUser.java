@@ -92,7 +92,6 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
     public boolean RegisterAccount(Account account){
         //remeber to NOT decript the password as it will need to be encrypted on teh database
         String register_url = "https://brunelbetterapp.000webhostapp.com/userRegister.php";
-
         try {
             URL url = new URL(register_url);
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
