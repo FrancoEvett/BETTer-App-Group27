@@ -32,7 +32,7 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
     //the will get an account object from the database accoring to userID if exist and return null id does not exist
     public Account GetUserAccount(String userID){
             String link = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
-            String data = "";
+            String studentID = userID;
             try {
                 //Setting up connection to the link and then posting the data to the link (E.g. such as an API call)
                 URL url = new URL(link);
@@ -51,7 +51,7 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
                 //Reading the output data from the website which is currently in JSON format
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
-
+                String data ="";
                 String line;
                 while ((line = bufferedReader.readLine()) != null) {
                     data += line;
@@ -91,7 +91,7 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
     //this will add a new user to database from a account Object and if already exists return false and if successful return true;
     public boolean RegisterAccount(Account account){
         //remeber to NOT decript the password as it will need to be encrypted on teh database
-        String register_url = "http://brunelbetterapp.000webhostapp.com/userRegister.php";
+        String register_url = "https://brunelbetterapp.000webhostapp.com/userRegister.php";
 
         try {
             URL url = new URL(register_url);

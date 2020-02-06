@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 static String username = "BETTer";
 static String password = "BETTer1";
 better b = new better();
+UserAccountControll userAccountControll = new UserAccountControll();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,17 +47,46 @@ better b = new better();
     public void on_click (View view){
         EditText Username = (EditText) findViewById(R.id.Username);
         EditText Password = (EditText) findViewById(R.id.Password);
-        String Username1 = Username.getText().toString();
-        String Password1 = Password.getText().toString();
+        String userName = Username.getText().toString();
+        String passWord = Password.getText().toString();
 
-        if (Username1.equals(username) ==  true && Password1.equals(password) == true){
-            Intent intent = new Intent(this, better.class);
-            startActivity(intent);
+        if (userAccountControll.Login(userName, passWord)){
+            //login sucessfull
+        }else {
+            //login unsuccesful
+
+        }
+    }
+
+    public void sign_new_account (View view){
+        EditText ID = findViewById(R.id.studentID);
+        EditText pass = findViewById(R.id.firstpassword);
+        EditText repass = findViewById(R.id.repeatpassword);
+        EditText username = findViewById(R.id.userName);
+        EditText useremail = findViewById(R.id.userEmail);
+        TextView message = findViewById(R.id.textView11);
+        String id = ID.getText().toString();
+        String userName = username.getText().toString();
+        String userEmail = useremail.getText().toString();
+        String password = pass.getText().toString();
+        String repeatpass = repass.getText().toString();
+        ID.setText("");
+        pass.setText("");
+        repass.setText("");
+        if(password.equals(repeatpass) == true) {
+            if (userAccountControll.CreateNewAccount(id, userName , userEmail, password)){
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                // Adding all the data j
+            }else{
+                 message.setText("Error has occurred");
+            }
         }
         else {
-            TextView error = (TextView) findViewById(R.id.errormex);
-            error.setText("Username or Password Wrong!");
+            message.setText("The 2 passwords are not equal. Please try again!");
+            // If the password is not the same
         }
+
     }
 
     public void sign_up (View view){
