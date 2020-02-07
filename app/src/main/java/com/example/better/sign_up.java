@@ -44,7 +44,7 @@ public class sign_up extends AppCompatActivity {
             if (password.equals(repeatpass) == true) {
                 if (userAccountControll.CreateNewAccount(id, userName, userEmail, password)) {
                     Intent intent = new Intent(this, MainActivity.class);
-                    startActivity(intent);
+                   startActivity(intent);
                     // Adding all the data j
                 } else {
                     message.setText("Error has occurred");

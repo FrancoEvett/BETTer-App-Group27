@@ -48,21 +48,24 @@ public class DatabaseBridge {
 
         DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
         databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass);
+
         try {
-            Thread.sleep(100);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if(check_info.equals("User Exist")){
-            return false;
-        }
-        else if(check_info.equals("User Added")){
-            return true;
-        }
-        else{
-            return false;
+
+        Log.d("Error: ", "maybe Null check_info" );
+        if(check_info != null){
+            if(check_info.equals("User Exist")){
+                return false;
+            }
+            else if(check_info.equals("User Added")){
+                return true;
+            }
         }
 
+            return false;
     }
 
 }
