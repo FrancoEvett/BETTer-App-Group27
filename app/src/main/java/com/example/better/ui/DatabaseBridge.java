@@ -19,12 +19,13 @@ public class DatabaseBridge {
 
         DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
         databaseControllerForUsers.execute(type,iD);
-        Log.d("Error",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
         try {
-            Thread.sleep(20);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Log.d("Error",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
+
         if(studentID == null){
             Log.d("Error:", "due to null" );
         }else
