@@ -2,8 +2,6 @@ package com.example.better;
 
 import android.os.AsyncTask;
 
-import com.example.better.ui.DatabaseBridge;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -15,10 +13,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 
@@ -98,8 +94,6 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                     //Send this data from this to another method
 
                 }
-
-
                 return "";
 
             } catch (MalformedURLException e) {
