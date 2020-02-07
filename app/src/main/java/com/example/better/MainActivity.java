@@ -55,9 +55,12 @@ UserAccountControll userAccountControll = new UserAccountControll();
         }
         else {
             if (userAccountControll.Login(userName, passWord)){
+                //login sucessfull
 
-        }
-            //login sucessfull
+            }
+            else {
+                Error.setText("Invalid Login");
+            }
 
     }}
 

@@ -12,23 +12,52 @@ package com.example.better;
 //none of the data needs to be accessed by anyone else spo here i will store all of the information
 //on lab data in this class - i will be making binary files on the local storage (this give us more to write about since we have already done databases)
 
+import com.example.better.ui.DatabaseBridge;
+
 public class UserAccountControll {
 
     private DatabaseControllerUser databaseControllerUser = new DatabaseControllerUser(null);
+    private DatabaseBridge databaseBridge = new DatabaseBridge();
     private Account loggedINAccount;
-
+    public static Boolean checker;
     //call this method to Login (Returns true id successful)
     public boolean Login(String userID, String UserPassword){
         //check if user is already logged in if so return false
-        if (loggedINAccount != null) { return false;}
+        if (loggedINAccount != null) {
+            return false;
+        }
+
         //request user account details from database
-        Account account = databaseControllerUser.GetUserAccount(userID);
+
+//        Account account = databaseControllerUser.GetUserAccount(userID);   //Can u please call a different method
+
+        //Account account = databaseBridge.userLogin(userID);
+
+       // databaseBridge.userLogin(userID);
+        Account account = databaseBridge.userLogin(userID);
+     //   Account account = databaseBridge.userDetail();
+
+
+        // From here we exit and then use the useDetail for the to check the user details as we pass the info there
+        //I cannot chnage my class as there are pre-build libries with doesn't work outside
+        //Please use the userDetails for further check
+
+
+
+
         //now check if the account exists in the database
-        if (account == null){return false;}//user does not exist
+        if (account == null){
+            return false;
+        }//user does not exist
+
         //user exist in database, now check to see if passwords match
-        if (!account.TestPassword(UserPassword)){return false; }
+        if (!account.TestPassword(UserPassword)){
+            return false;
+        }
+
         //everything checks out allow the user to login
         loggedINAccount = account;
+
         return true;
     }
 
@@ -57,4 +86,24 @@ public class UserAccountControll {
         loggedINAccount.ChangePassword(newPassword);
         return true;
     }
+
+
+
+
+    public static void userDetails(String studentID, String userName, String userEmail, String userPassword){
+        if (checker){
+            String student_ID = studentID;
+            String user_Name = userName;
+            String user_Email = userEmail;
+            String user_Pass = userPassword;
+        }
+        else {
+            //User doesn't exist
+
+        }
+
+
+    }
+
+
 }

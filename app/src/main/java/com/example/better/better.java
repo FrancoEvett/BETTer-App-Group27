@@ -95,10 +95,10 @@ public class better extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    int lab = getLab5();
+//    int lab = getLab5();
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
-        if (activity.contains("lecture")||activity.contains("Lab " + lab)) {
+        if (activity.contains("lecture")||activity.contains("Lab " /*lab*/)) {
             displayTimetable.append("Activity: " + activity + "\n" + "Description: " + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n\n");
         }
     }
@@ -519,6 +519,9 @@ public class better extends AppCompatActivity {
         }
     }
 
+
+
+    /*
     public void Enter (View view){
         int empty=0;
         EditText cs1 = findViewById(R.id.editText);
@@ -544,6 +547,8 @@ public class better extends AppCompatActivity {
             }
     }
 
+     */
+
     public void SetLabs(int c1, int c2, int c3, int c4, int c5){
         try {
             SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
@@ -560,6 +565,8 @@ public class better extends AppCompatActivity {
         }
     }
 
+
+   /*
     public int getLab1(){
         SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
         int Lab2001 = preference.getInt("CS2001", 0);
@@ -584,5 +591,5 @@ public class better extends AppCompatActivity {
         SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
         int Lab2005 = preference.getInt("CS2001", 0);
         return Lab2005;
-    }
+    }  */
 }
