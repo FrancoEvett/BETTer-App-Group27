@@ -11,12 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="72" column="128" selection-start-line="72" selection-start-column="128" selection-end-line="72" selection-end-column="128" />
+            <state relative-caret-position="715">
+              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -409,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581034088125</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Franco, please read my comments">
+      <created>1581034456417</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581034456418</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -527,7 +530,8 @@
     <MESSAGE value="Ok guys, it seems to be working now, Pruthvi has just to add a few lines to filter the data and get only Lectures. Try it out and let me know if there is something you'd change" />
     <MESSAGE value="file updated with shared preferences" />
     <MESSAGE value="Backend-Login is messed up&#10;&#10;SharedPrefernce has been commented out as it is not working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend-Login is messed up&#10;&#10;SharedPrefernce has been commented out as it is not working" />
+    <MESSAGE value="Franco, please read my comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Franco, please read my comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="72" column="128" selection-start-line="72" selection-start-column="128" selection-end-line="72" selection-end-column="128" />
+        <state relative-caret-position="715">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
         </state>
       </provider>
     </entry>

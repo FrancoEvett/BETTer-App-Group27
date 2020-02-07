@@ -90,20 +90,5 @@ public class UserAccountControll {
 
 
 
-    public static void userDetails(String studentID, String userName, String userEmail, String userPassword){
-        if (checker){
-            String student_ID = studentID;
-            String user_Name = userName;
-            String user_Email = userEmail;
-            String user_Pass = userPassword;
-        }
-        else {
-            //User doesn't exist
-
-        }
-
-
-    }
-
 
 }
