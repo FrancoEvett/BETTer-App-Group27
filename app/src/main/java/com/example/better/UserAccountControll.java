@@ -16,7 +16,7 @@ import com.example.better.ui.DatabaseBridge;
 
 public class UserAccountControll {
 
-    private DatabaseControllerUser databaseControllerUser = new DatabaseControllerUser(null);
+
     private DatabaseBridge databaseBridge = new DatabaseBridge();
     private Account loggedINAccount;
     public static Boolean checker;
@@ -53,6 +53,8 @@ public class UserAccountControll {
         //user exist in database, now check to see if passwords match
         if (!account.TestPassword(UserPassword)){
             return false;
+           // return true;
+
         }
 
         //everything checks out allow the user to login
@@ -71,7 +73,7 @@ public class UserAccountControll {
     public boolean CreateNewAccount(String userID, String userName, String userEmail, String userPassword){
         //compile a new account object
         Account account = new Account(userID, userName, userEmail, userPassword); //please first encrypt and send me as a string
-        if (databaseControllerUser.RegisterAccount(account)){
+        if (databaseBridge.RegisterAccount(account)){
             return true;
         }
         return false;

@@ -31,12 +31,13 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
     //we are going to get all the data from here/ this class and then i am going to make another class you deals with the true and false part
     @Override
     protected String doInBackground(String... voids) {
-        String type = String.valueOf(voids[0]);
+        String type = voids[0];
       //  String userLoginURL = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
         String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
-        String userRegURL ="https://brunelbetterapp.000webhostapp.com/userRegister.php";
+        //String userRegURL ="https://brunelbetterapp.000webhostapp.com/userRegister.php";
+        String userRegURL = "http://10.0.2.2/andriodApp/userRegister.php";
         if(type.equals("Login")){
-            String studentID = String.valueOf(voids[1]);
+            String studentID = voids[1];
             try {
                 //Sending the data to the server/page
                 URL url = new URL(userLoginURL);
@@ -106,7 +107,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                 String studentID = voids[1];
                 String userName = voids[2];
                 String userEmail = voids[3];
-                String userPass = voids[4];
+                String userPassword = voids[4];
                 URL url = new URL(userRegURL);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
@@ -117,7 +118,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                 String post_data = URLEncoder.encode("studentID", "UTF-8") + "=" + URLEncoder.encode(studentID, "UTF-8") + "&"
                         + URLEncoder.encode("userName", "UTF-8") + "=" + URLEncoder.encode(userName, "UTF-8") + "&"
                         + URLEncoder.encode("userEmail", "UTF-8") + "=" + URLEncoder.encode(userEmail, "UTF-8") + "&"
-                        + URLEncoder.encode("userPassword", "UTF-8") + "=" + URLEncoder.encode(userPass, "UTF-8");
+                        + URLEncoder.encode("userPassword", "UTF-8") + "=" + URLEncoder.encode(userPassword, "UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();

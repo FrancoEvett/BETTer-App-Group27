@@ -13,6 +13,7 @@ public class DatabaseBridge {
     public static String userPass = null ;
     public static String check_info;
 
+
     public Account userLogin(String userID){
         String type = "Login";
         String iD = userID;
@@ -30,13 +31,15 @@ public class DatabaseBridge {
             Log.d("Error:", "due to null" );
         }else
         {
-            Account account = new Account(studentID,userName,userEmail,userPass); return account;
+            Account account = new Account(studentID,userName,userEmail,userPass);
+            return account;
+
             }
         return null;
 
     }
 
-    public boolean RegisterAccount(Account account){
+    public Boolean RegisterAccount(Account account){
         String type = "register";
         String user_ID = account.StudentID;
         String user_Name = account.Name;
@@ -45,8 +48,21 @@ public class DatabaseBridge {
 
         DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
         databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass);
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        if(check_info.equals("User Exist")){
+            return false;
+        }
+        else if(check_info.equals("User Added")){
+            return true;
+        }
+        else{
+            return false;
+        }
 
-        return Boolean.parseBoolean(null);
     }
 
 }

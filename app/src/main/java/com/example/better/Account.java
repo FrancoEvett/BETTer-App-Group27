@@ -26,10 +26,18 @@ public class Account {
         EncryptPassword();
     }
     public boolean TestPassword(String passwordIN){
-        DecryptPassword();
+       // DecryptPassword();
+
+
+
+        //This seems to solve the problem
+        EncryptPassword();        //@Franco I don't understand why u were Decrypthing the Password that the user had  inputed, you meant to decrypt the password from the database
+
+
+
         //then test if passwords match
         if (passwordIN.equals(Password)){
-            EncryptPassword();
+            //EncryptPassword();
             return true;
         }
         EncryptPassword();
@@ -152,7 +160,9 @@ public class Account {
         Password = encryptedPassword;
     }
     public void DecryptPassword(){
-        if(!encrypted){return;}
+        if(!encrypted){
+            return;
+        }
         encrypted = false;
 
         //create an array of the passwords char characters
