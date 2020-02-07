@@ -16,7 +16,7 @@ public class Account {
     private boolean encrypted;
     private Hashtable<String, String> hashtable;
 
-    Account(String userStudentID, String userName, String userEmail, String userPassword){
+    public Account(String userStudentID, String userName, String userEmail, String userPassword){
         PopulateHashTable();
         //initialise variables to class from constructor
         StudentID = userStudentID;

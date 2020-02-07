@@ -63,18 +63,18 @@ public class DatabaseControllerUser extends AsyncTask<String, Void, String> {
                 httpURLConnection.disconnect();
 
                 //Parsing the JSON data into single variables by passing the data string
-                JSONArray jsonArray = new JSONArray(data);
-                for (int i = 0; i < jsonArray.length(); i++) {
-                    JSONObject jsonObject = (JSONObject) jsonArray.get(i);
 
-                    String student_ID = jsonObject.get("studentID").toString();
-                    String userName = jsonObject.get("userName").toString();
-                    String userEmail = jsonObject.get("userEmail").toString();
-                    String userPassword = jsonObject.get("userPassword").toString();
+                    JSONArray jsonArray = new JSONArray(data);
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject jsonObject = (JSONObject) jsonArray.get(i);
 
+                        String student_ID = jsonObject.get("studentID").toString();
+                        String userName = jsonObject.get("userName").toString();
+                        String userEmail = jsonObject.get("userEmail").toString();
+                        String userPassword = jsonObject.get("userPassword").toString();
                     //build a new account object and return it
                     Account account = new Account(student_ID, userName, userEmail, userPassword);
-                    return account;
+                        return account;
                 }
 
 

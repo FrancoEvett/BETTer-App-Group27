@@ -37,7 +37,7 @@ public class DatabaseBridge {
     }
 
     public boolean RegisterAccount(Account account){
-
+        String userID = StudentID;
 
         return Boolean.parseBoolean(null);
     }

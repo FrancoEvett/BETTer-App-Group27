@@ -70,7 +70,7 @@ public class UserAccountControll {
     //call this method to create a new account(Returns true id successful)
     public boolean CreateNewAccount(String userID, String userName, String userEmail, String userPassword){
         //compile a new account object
-        Account account = new Account(userID, userName, userEmail, userPassword);
+        Account account = new Account(userID, userName, userEmail, userPassword); //please first encrypt and send me as a string
         if (databaseControllerUser.RegisterAccount(account)){
             return true;
         }
