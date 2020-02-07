@@ -64,7 +64,11 @@ UserAccountControll userAccountControll = new UserAccountControll();
 
     }}
 
-    public void sign_new_account (View view){
+    public void signNewAccount(View view){
+
+    }
+
+    public void sign_new_account (View v){
         EditText ID = findViewById(R.id.studentID);
         EditText pass = findViewById(R.id.firstpassword);
         EditText repass = findViewById(R.id.repeatpassword);
@@ -83,6 +87,7 @@ UserAccountControll userAccountControll = new UserAccountControll();
             //editetxt display enter somethigm
             message.setText("Error");
         }
+
         else {
             if (password.equals(repeatpass) == true) {
                 if (userAccountControll.CreateNewAccount(id, userName, userEmail, password)) {
@@ -109,5 +114,9 @@ UserAccountControll userAccountControll = new UserAccountControll();
         Intent intent = new Intent(this, forgot_password.class);
         startActivity(intent);
 
+    }
+    public void back(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

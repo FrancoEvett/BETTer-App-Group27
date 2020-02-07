@@ -11,11 +11,15 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 
@@ -30,7 +34,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
         String type = String.valueOf(voids[0]);
       //  String userLoginURL = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
         String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
-
+        String userRegURL ="https://brunelbetterapp.000webhostapp.com/userRegister.php";
         if(type.equals("Login")){
             String studentID = String.valueOf(voids[1]);
             try {
@@ -97,12 +101,70 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                 e.printStackTrace();
             }
         }
+        else if(type.equals("register")){
+            try {
+                String studentID = voids[1];
+                String userName = voids[2];
+                String userEmail = voids[3];
+                String userPass = voids[4];
+                URL url = new URL(userRegURL);
+                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                String post_data = URLEncoder.encode("studentID", "UTF-8") + "=" + URLEncoder.encode(studentID, "UTF-8") + "&"
+                        + URLEncoder.encode("userName", "UTF-8") + "=" + URLEncoder.encode(userName, "UTF-8") + "&"
+                        + URLEncoder.encode("userEmail", "UTF-8") + "=" + URLEncoder.encode(userEmail, "UTF-8") + "&"
+                        + URLEncoder.encode("userPassword", "UTF-8") + "=" + URLEncoder.encode(userPass, "UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+
+                //Reading the results
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                String result = "";
+                String line;
+                while ((line = bufferedReader.readLine()) != null) {
+                    result += line;
+                }
+                //Closing the connections
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+
+                //sending true or false or any info
+                if(result.equals("User Exist")){
+                    databaseBridge.check_info = "User Exist";
+                }
+
+                else if(result.equals("User Added")){
+                    databaseBridge.check_info = "User Added";
+
+                }
+                else if(result.equals("Error")){
+                    databaseBridge.check_info= "Error";
+                }
+                return result;
+
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            } catch (ProtocolException e) {
+                e.printStackTrace();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
         return null;
     }
 
-    @Override
-    protected void onPostExecute(String result) {
 
-    }
 
 }

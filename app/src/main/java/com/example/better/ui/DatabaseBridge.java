@@ -11,7 +11,7 @@ public class DatabaseBridge {
     public static String userName = null;
     public static String userEmail = null;
     public static String userPass = null ;
-
+    public static String check_info;
 
     public Account userLogin(String userID){
         String type = "Login";
@@ -37,7 +37,14 @@ public class DatabaseBridge {
     }
 
     public boolean RegisterAccount(Account account){
-        String userID = StudentID;
+        String type = "register";
+        String user_ID = account.StudentID;
+        String user_Name = account.Name;
+        String user_Email = account.Email;
+        String user_pass = account.Password;
+
+        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
+        databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass);
 
         return Boolean.parseBoolean(null);
     }

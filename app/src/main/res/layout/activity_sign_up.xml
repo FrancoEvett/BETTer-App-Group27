@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sign_up">
+    tools:contex=".sign_up"
+    >
 
     <EditText
         android:id="@+id/userName"
@@ -81,7 +82,7 @@
         android:layout_width="143dp"
         android:layout_height="58dp"
         android:background="@android:color/holo_green_dark"
-        android:onClick="sign_new_account"
+        android:onClick="signNewAccount"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
