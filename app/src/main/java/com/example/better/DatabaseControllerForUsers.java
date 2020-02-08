@@ -18,11 +18,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-import com.example.better.ui.DatabaseBridge;
-
 public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> {
-
-    //this si not the same instance of teh class that you are calling need to return value :From Franco
     DatabaseBridge databaseBridge = new DatabaseBridge();
 
 

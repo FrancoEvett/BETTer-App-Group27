@@ -56,15 +56,15 @@ public class DatabaseBridge {
         }
 
         Log.d("Error: ", "maybe Null check_info" );
-        if(check_info == null){
+        if(check_info != null){
+            if(check_info.equals("User Added")){
+                return true;
+            }
+            else if(check_info.equals("User Exist")){
+                return false;
+            }
+        }
             return false;
-        }
-        else if(check_info.equals("User Added")){
-            return true;
-        }
-        else if(check_info.equals("User Exist")){
-            return false;
-        }
-        return false;
     }
+
 }

@@ -26,11 +26,14 @@ public class Account {
         EncryptPassword();
     }
     public boolean TestPassword(String passwordIN){
-       //DecryptPassword();
+       // DecryptPassword();
 
-        EncryptPassword();
+
+
         //This seems to solve the problem
-        //@Franco I don't understand why u were Decrypthing the Password that the user had  inputed, you meant to decrypt the password from the database
+        EncryptPassword();        //@Franco I don't understand why u were Decrypthing the Password that the user had  inputed, you meant to decrypt the password from the database
+
+
 
         //then test if passwords match
         if (passwordIN.equals(Password)){
@@ -40,8 +43,6 @@ public class Account {
         EncryptPassword();
         return false;
     }
-
-    //call this to change teh pasword
     public void ChangePassword(String newPassword){
         Password = newPassword;
         EncryptPassword();
