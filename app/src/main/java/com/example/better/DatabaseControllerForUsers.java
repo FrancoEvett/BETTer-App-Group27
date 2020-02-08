@@ -18,6 +18,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+import com.example.better.ui.DatabaseBridge;
+
 public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> {
     DatabaseBridge databaseBridge = new DatabaseBridge();
 

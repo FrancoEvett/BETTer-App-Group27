@@ -20,6 +20,7 @@ public class UserAccountControll {
     private DatabaseBridge databaseBridge = new DatabaseBridge();
     private Account loggedINAccount;
     public static Boolean checker;
+
     //call this method to Login (Returns true id successful)
     public boolean Login(String userID, String UserPassword){
         //check if user is already logged in if so return false
