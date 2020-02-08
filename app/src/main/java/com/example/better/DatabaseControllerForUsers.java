@@ -23,7 +23,7 @@ import com.example.better.ui.DatabaseBridge;
 public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> {
 
     //this si not the same instance of teh class that you are calling need to return value :From Franco
-    //DatabaseBridge databaseBridge = new DatabaseBridge();
+    DatabaseBridge databaseBridge = new DatabaseBridge();
 
 
 
