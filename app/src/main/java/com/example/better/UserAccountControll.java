@@ -70,7 +70,7 @@ public class UserAccountControll {
         loggedINAccount = null;
     }
 
-    //call this method to create a new account(Returns true id successful)
+    //call this method to create a new account(Returns true if successful)
     public boolean CreateNewAccount(String userID, String userName, String userEmail, String userPassword){
         //compile a new account object
         Account account = new Account(userID, userName, userEmail, userPassword); //please first encrypt and send me as a string
@@ -89,9 +89,5 @@ public class UserAccountControll {
         loggedINAccount.ChangePassword(newPassword);
         return true;
     }
-
-
-
-
 
 }

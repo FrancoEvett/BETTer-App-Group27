@@ -26,23 +26,23 @@ public class Account {
         EncryptPassword();
     }
     public boolean TestPassword(String passwordIN){
-       // DecryptPassword();
-
-
+       DecryptPassword();
 
         //This seems to solve the problem
-        EncryptPassword();        //@Franco I don't understand why u were Decrypthing the Password that the user had  inputed, you meant to decrypt the password from the database
-
-
+        //@Franco I don't understand why u were Decrypthing the Password that the user had  inputed, you meant to decrypt the password from the database
+        // becouse the user is not eneteruing a decrypted password they are are entering an unectrupted password so decrypt to check then  reincry to be safe
+        //truest me it needs to be how it was
 
         //then test if passwords match
         if (passwordIN.equals(Password)){
-            //EncryptPassword();
+            EncryptPassword();
             return true;
         }
         EncryptPassword();
         return false;
     }
+
+    //call this to change teh pasword
     public void ChangePassword(String newPassword){
         Password = newPassword;
         EncryptPassword();
