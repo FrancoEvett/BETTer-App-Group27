@@ -2,6 +2,8 @@ package com.example.better;
 
 import android.os.AsyncTask;
 
+import com.example.better.ui.DatabaseBridge;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

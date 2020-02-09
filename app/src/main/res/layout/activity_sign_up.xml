@@ -81,7 +81,7 @@
         android:id="@+id/sign_up"
         android:layout_width="143dp"
         android:layout_height="58dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@drawable/signup"
         android:onClick="signNewAccount"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -89,7 +89,7 @@
         app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.713" />
+        app:layout_constraintVertical_bias="0.732" />
 
     <ImageView
         android:id="@+id/imageView3"

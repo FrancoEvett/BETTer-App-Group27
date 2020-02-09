@@ -23,7 +23,7 @@
 
             <Button
                 android:id="@+id/Monday"
-                android:layout_width="101dp"
+                android:layout_width="76dp"
                 android:layout_height="44dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Monday"
@@ -38,7 +38,7 @@
 
             <Button
                 android:id="@+id/Tuesday"
-                android:layout_width="105dp"
+                android:layout_width="76dp"
                 android:layout_height="44dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Tuesday"
@@ -53,7 +53,7 @@
 
             <Button
                 android:id="@+id/Wednesday"
-                android:layout_width="104dp"
+                android:layout_width="99dp"
                 android:layout_height="44dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Wednesday"
@@ -68,7 +68,7 @@
 
             <Button
                 android:id="@+id/Thursday"
-                android:layout_width="105dp"
+                android:layout_width="wrap_content"
                 android:layout_height="44dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Thursday"
@@ -82,16 +82,17 @@
                 app:layout_constraintVertical_bias="0.139" />
 
             <Button
-                android:id="@+id/Friday"
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
+                android:id="@+id/friday"
+                android:layout_width="72dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
                 android:background="@android:color/holo_purple"
                 android:onClick="Friday"
                 android:text="FRIDAY"
                 android:textColor="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.976"
+                app:layout_constraintHorizontal_bias="0.733"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.139" />
