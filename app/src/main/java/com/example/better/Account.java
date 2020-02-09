@@ -23,21 +23,26 @@ public class Account {
         Name = userName;
         Email = userEmail;
         Password = userPassword;
-        EncryptPassword();
     }
+    public Account(String userStudentID, String userName, String userEmail, String userPassword, boolean newAccount){
+        PopulateHashTable();
+        //initialise variables to class from constructor
+        StudentID = userStudentID;
+        Name = userName;
+        Email = userEmail;
+        Password = userPassword;
+        if (newAccount){
+            EncryptPassword();
+        }
+    }
+
+
     public boolean TestPassword(String passwordIN){
-       // DecryptPassword();
-
-
-
-        //This seems to solve the problem
-        EncryptPassword();        //@Franco I don't understand why u were Decrypthing the Password that the user had  inputed, you meant to decrypt the password from the database
-
-
-
+        //first decrypt the password ready for checking
+        DecryptPassword();
         //then test if passwords match
         if (passwordIN.equals(Password)){
-            //EncryptPassword();
+            EncryptPassword();
             return true;
         }
         EncryptPassword();
@@ -160,9 +165,7 @@ public class Account {
         Password = encryptedPassword;
     }
     public void DecryptPassword(){
-        if(!encrypted){
-            return;
-        }
+        if(!encrypted){return;}
         encrypted = false;
 
         //create an array of the passwords char characters

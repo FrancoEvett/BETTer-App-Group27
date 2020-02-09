@@ -15,35 +15,17 @@ package com.example.better;
 import com.example.better.ui.DatabaseBridge;
 
 public class UserAccountControll {
-
-
     private DatabaseBridge databaseBridge = new DatabaseBridge();
     private Account loggedINAccount;
-    public static Boolean checker;
+
     //call this method to Login (Returns true id successful)
     public boolean Login(String userID, String UserPassword){
         //check if user is already logged in if so return false
         if (loggedINAccount != null) {
             return false;
         }
-
-        //request user account details from database
-
-//        Account account = databaseControllerUser.GetUserAccount(userID);   //Can u please call a different method
-
-        //Account account = databaseBridge.userLogin(userID);
-
        // databaseBridge.userLogin(userID);
         Account account = databaseBridge.userLogin(userID);
-     //   Account account = databaseBridge.userDetail();
-
-
-        // From here we exit and then use the useDetail for the to check the user details as we pass the info there
-        //I cannot chnage my class as there are pre-build libries with doesn't work outside
-        //Please use the userDetails for further check
-
-
-
 
         //now check if the account exists in the database
         if (account == null){
@@ -72,7 +54,7 @@ public class UserAccountControll {
     //call this method to create a new account(Returns true id successful)
     public boolean CreateNewAccount(String userID, String userName, String userEmail, String userPassword){
         //compile a new account object
-        Account account = new Account(userID, userName, userEmail, userPassword); //please first encrypt and send me as a string
+        Account account = new Account(userID, userName, userEmail, userPassword, true); //please first encrypt and send me as a string : reply is encrypted on creation and is a string
         if (databaseBridge.RegisterAccount(account)){
             return true;
         }

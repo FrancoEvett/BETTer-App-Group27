@@ -64,7 +64,7 @@ public class DatabaseBridge {
                 return false;
             }
         }
-            return false;
+        return false;
     }
 
 }
