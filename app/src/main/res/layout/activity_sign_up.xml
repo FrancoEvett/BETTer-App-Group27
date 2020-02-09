@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/improved_background"
     tools:contex=".sign_up"
     >
 
@@ -14,6 +15,9 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -28,6 +32,9 @@
         android:ems="10"
         android:hint="Student ID"
         android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -42,6 +49,9 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -56,6 +66,9 @@
         android:ems="10"
         android:hint="Repeat Password"
         android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -70,6 +83,9 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -118,16 +134,16 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="42dp"
         android:background="@android:color/holo_red_dark"
         android:onClick="back"
         android:text="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.896" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
