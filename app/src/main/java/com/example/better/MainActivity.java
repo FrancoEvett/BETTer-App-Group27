@@ -1,6 +1,7 @@
 package com.example.better;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -45,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
+
+    private void popup(String title, String msg) {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle(title);
+        dialog.setMessage(msg);
+        dialog.show();
+    }
+
     public void on_click (View view){
         EditText Username = (EditText) findViewById(R.id.Username);
         EditText Password = (EditText) findViewById(R.id.Password);
@@ -61,10 +70,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
             else {
-                Error.setText("Invalid Login");
+               // Error.setText("Invalid Login");
+                popup("Error", "Invalid login" );
+
             }
 
-    }}
+        }
+    }
+
 
     public void signNewAccount(View view){
 

@@ -1,5 +1,6 @@
 package com.example.better;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,7 +19,12 @@ public class sign_up extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
     }
-
+    private void popup(String title, String msg) {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle(title);
+        dialog.setMessage(msg);
+        dialog.show();
+    }
 
     public void signNewAccount(View view){
         EditText ID = findViewById(R.id.studentID);
@@ -37,7 +43,8 @@ public class sign_up extends AppCompatActivity {
         repass.setText("");
         if(((password == null) || (password.isEmpty() == true))  || ((userEmail == null) || (userEmail.isEmpty() == true) ||  ((userName == null) || (userName.isEmpty() ==true)))){
             //editetxt display enter somethigm
-            message.setText("Error");
+            //message.setText("Error");
+            popup("Error", "You have not filled in the sign up" );
         }
 
         else {
