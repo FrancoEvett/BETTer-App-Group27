@@ -18,6 +18,12 @@ public class UserAccountControll {
     private DatabaseBridge databaseBridge = new DatabaseBridge();
     private Account loggedINAccount;
 
+
+    UserAccountControll(){
+        //this will be where i get the user that has already loggen on (just need to sort out global vairables or file on phone to do it)
+    }
+
+
     //call this method to Login (Returns true id successful)
     public boolean Login(String userID, String UserPassword){
         //check if user is already logged in if so return false

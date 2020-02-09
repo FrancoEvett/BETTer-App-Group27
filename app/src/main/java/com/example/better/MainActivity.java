@@ -25,10 +25,11 @@ import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class MainActivity extends AppCompatActivity {
-static String username = "BETTer";
-static String password = "BETTer1";
-better b = new better();
-UserAccountControll userAccountControll = new UserAccountControll();
+
+    static String username = "BETTer";
+    static String password = "BETTer1";
+    better b = new better();
+    UserAccountControll userAccountControll = new UserAccountControll();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +59,6 @@ UserAccountControll userAccountControll = new UserAccountControll();
                 //login sucessfull
                 Intent intent = new Intent(this, better.class);
                 startActivity(intent);
-
             }
             else {
                 Error.setText("Invalid Login");
@@ -97,10 +97,10 @@ UserAccountControll userAccountControll = new UserAccountControll();
                     startActivity(intent);
                     // Adding all the data j
                 } else {
-                    message.setText("Error has occurred");
+                    message.setText("Account Creation Failed");
                 }
             } else {
-                message.setText("The 2 passwords are not equal. Please try again!");
+                message.setText("Passwords Do Not Match. Please try again!");
                 // If the password is not the same
             }
         }
