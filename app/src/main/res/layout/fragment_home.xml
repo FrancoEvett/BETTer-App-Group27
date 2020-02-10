@@ -11,7 +11,6 @@
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
@@ -23,8 +22,8 @@
 
             <Button
                 android:id="@+id/Monday"
-                android:layout_width="101dp"
-                android:layout_height="44dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@android:color/holo_purple"
                 android:onClick="Monday"
                 android:text="MONDAY"
@@ -38,8 +37,8 @@
 
             <Button
                 android:id="@+id/Tuesday"
-                android:layout_width="105dp"
-                android:layout_height="44dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@android:color/holo_purple"
                 android:onClick="Tuesday"
                 android:text="TUESDAY"
@@ -53,8 +52,8 @@
 
             <Button
                 android:id="@+id/Wednesday"
-                android:layout_width="104dp"
-                android:layout_height="44dp"
+                android:layout_width="99dp"
+                android:layout_height="50dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Wednesday"
                 android:text="WEDNESDAY"
@@ -68,8 +67,8 @@
 
             <Button
                 android:id="@+id/Thursday"
-                android:layout_width="105dp"
-                android:layout_height="44dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Thursday"
                 android:text="THURSDAY"

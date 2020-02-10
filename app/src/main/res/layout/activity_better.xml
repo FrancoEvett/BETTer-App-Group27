@@ -21,6 +21,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_better"
+        app:itemTextColor="@android:color/holo_purple"
         app:menu="@menu/activity_better_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
