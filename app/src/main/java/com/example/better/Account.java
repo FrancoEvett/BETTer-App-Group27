@@ -16,16 +16,29 @@ public class Account {
     private boolean encrypted;
     private Hashtable<String, String> hashtable;
 
-    Account(String userStudentID, String userName, String userEmail, String userPassword){
+    public Account(String userStudentID, String userName, String userEmail, String userPassword){
         PopulateHashTable();
         //initialise variables to class from constructor
         StudentID = userStudentID;
         Name = userName;
         Email = userEmail;
         Password = userPassword;
-        EncryptPassword();
     }
+    public Account(String userStudentID, String userName, String userEmail, String userPassword, boolean newAccount){
+        PopulateHashTable();
+        //initialise variables to class from constructor
+        StudentID = userStudentID;
+        Name = userName;
+        Email = userEmail;
+        Password = userPassword;
+        if (newAccount){
+            EncryptPassword();
+        }
+    }
+
+
     public boolean TestPassword(String passwordIN){
+        //first decrypt the password ready for checking
         DecryptPassword();
         //then test if passwords match
         if (passwordIN.equals(Password)){

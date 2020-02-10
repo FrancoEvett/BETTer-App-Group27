@@ -1,6 +1,7 @@
 package com.example.better;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -25,10 +26,11 @@ import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class MainActivity extends AppCompatActivity {
-static String username = "BETTer";
-static String password = "BETTer1";
-better b = new better();
-UserAccountControll userAccountControll = new UserAccountControll();
+
+    static String username = "BETTer";
+    static String password = "BETTer1";
+    better b = new better();
+    UserAccountControll userAccountControll = new UserAccountControll();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +41,19 @@ UserAccountControll userAccountControll = new UserAccountControll();
             w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
         setContentView(R.layout.activity_main);
-        
         getSupportActionBar().hide();
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
+
+    private void popup(String title, String msg) {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle(title);
+        dialog.setMessage(msg);
+        dialog.show();
+    }
+
     public void on_click (View view){
         EditText Username = (EditText) findViewById(R.id.Username);
         EditText Password = (EditText) findViewById(R.id.Password);
@@ -55,13 +65,25 @@ UserAccountControll userAccountControll = new UserAccountControll();
         }
         else {
             if (userAccountControll.Login(userName, passWord)){
+                //login sucessfull
+                Intent intent = new Intent(this, better.class);
+                startActivity(intent);
+            }
+            else {
+               // Error.setText("Invalid Login");
+                popup("Error", "Invalid login" );
+
+            }
 
         }
-            //login sucessfull
+    }
 
-    }}
 
-    public void sign_new_account (View view){
+    public void signNewAccount(View view){
+
+    }
+
+    public void sign_new_account (View v){
         EditText ID = findViewById(R.id.studentID);
         EditText pass = findViewById(R.id.firstpassword);
         EditText repass = findViewById(R.id.repeatpassword);
@@ -80,6 +102,7 @@ UserAccountControll userAccountControll = new UserAccountControll();
             //editetxt display enter somethigm
             message.setText("Error");
         }
+
         else {
             if (password.equals(repeatpass) == true) {
                 if (userAccountControll.CreateNewAccount(id, userName, userEmail, password)) {
@@ -87,10 +110,10 @@ UserAccountControll userAccountControll = new UserAccountControll();
                     startActivity(intent);
                     // Adding all the data j
                 } else {
-                    message.setText("Error has occurred");
+                    message.setText("Account Creation Failed");
                 }
             } else {
-                message.setText("The 2 passwords are not equal. Please try again!");
+                message.setText("Passwords Do Not Match. Please try again!");
                 // If the password is not the same
             }
         }
@@ -106,5 +129,9 @@ UserAccountControll userAccountControll = new UserAccountControll();
         Intent intent = new Intent(this, forgot_password.class);
         startActivity(intent);
 
+    }
+    public void back(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }

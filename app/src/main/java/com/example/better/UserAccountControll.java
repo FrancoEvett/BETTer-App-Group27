@@ -12,23 +12,42 @@ package com.example.better;
 //none of the data needs to be accessed by anyone else spo here i will store all of the information
 //on lab data in this class - i will be making binary files on the local storage (this give us more to write about since we have already done databases)
 
-public class UserAccountControll {
+import com.example.better.ui.DatabaseBridge;
 
-    private DatabaseControllerUser databaseControllerUser = new DatabaseControllerUser(null);
+public class UserAccountControll {
+    private DatabaseBridge databaseBridge = new DatabaseBridge();
     private Account loggedINAccount;
+
+
+    UserAccountControll(){
+        //this will be where i get the user that has already loggen on (just need to sort out global vairables or file on phone to do it)
+    }
+
 
     //call this method to Login (Returns true id successful)
     public boolean Login(String userID, String UserPassword){
         //check if user is already logged in if so return false
-        if (loggedINAccount != null) { return false;}
-        //request user account details from database
-        Account account = databaseControllerUser.GetUserAccount(userID);
+        if (loggedINAccount != null) {
+            return false;
+        }
+       // databaseBridge.userLogin(userID);
+        Account account = databaseBridge.userLogin(userID);
+
         //now check if the account exists in the database
-        if (account == null){return false;}//user does not exist
+        if (account == null){
+            return false;
+        }//user does not exist
+
         //user exist in database, now check to see if passwords match
-        if (!account.TestPassword(UserPassword)){return false; }
+        if (!account.TestPassword(UserPassword)){
+            return false;
+           // return true;
+
+        }
+
         //everything checks out allow the user to login
         loggedINAccount = account;
+
         return true;
     }
 
@@ -41,8 +60,8 @@ public class UserAccountControll {
     //call this method to create a new account(Returns true id successful)
     public boolean CreateNewAccount(String userID, String userName, String userEmail, String userPassword){
         //compile a new account object
-        Account account = new Account(userID, userName, userEmail, userPassword);
-        if (databaseControllerUser.RegisterAccount(account)){
+        Account account = new Account(userID, userName, userEmail, userPassword, true); //please first encrypt and send me as a string : reply is encrypted on creation and is a string
+        if (databaseBridge.RegisterAccount(account)){
             return true;
         }
         return false;
@@ -57,4 +76,9 @@ public class UserAccountControll {
         loggedINAccount.ChangePassword(newPassword);
         return true;
     }
+
+
+
+
+
 }
