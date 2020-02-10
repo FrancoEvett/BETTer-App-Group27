@@ -52,10 +52,11 @@ public class DatabaseBridge {
         databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass);
 
         try {
-            Thread.sleep(200);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
 
         Log.d("Error: ", "maybe Null check_info" );
         if(check_info != null){
