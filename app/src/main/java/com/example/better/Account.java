@@ -2,6 +2,7 @@ package com.example.better;
 
 
 import android.graphics.Region;
+import android.util.Log;
 
 import java.util.Hashtable;
 
@@ -40,6 +41,8 @@ public class Account {
     public boolean TestPassword(String passwordIN){
         //first decrypt the password ready for checking
         DecryptPassword();
+        Log.d("Login Debug", "User Password Entered : " + passwordIN);
+        Log.d("Login Debug", "User Password Required : " + Password);
         //then test if passwords match
         if (passwordIN.equals(Password)){
             EncryptPassword();
