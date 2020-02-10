@@ -6,8 +6,9 @@
     android:layout_height="match_parent">
 
     <HorizontalScrollView
-        android:layout_width="413dp"
-        android:layout_height="53dp"
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="419dp"
+        android:layout_height="40dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,8 +24,8 @@
 
             <Button
                 android:id="@+id/Monday"
-                android:layout_width="76dp"
-                android:layout_height="44dp"
+                android:layout_width="72dp"
+                android:layout_height="50dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Monday"
                 android:text="MONDAY"
@@ -38,8 +39,8 @@
 
             <Button
                 android:id="@+id/Tuesday"
-                android:layout_width="76dp"
-                android:layout_height="44dp"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
                 android:background="@android:color/holo_purple"
                 android:onClick="Tuesday"
                 android:text="TUESDAY"
@@ -54,7 +55,7 @@
             <Button
                 android:id="@+id/Wednesday"
                 android:layout_width="99dp"
-                android:layout_height="44dp"
+                android:layout_height="50dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Wednesday"
                 android:text="WEDNESDAY"
@@ -69,7 +70,7 @@
             <Button
                 android:id="@+id/Thursday"
                 android:layout_width="wrap_content"
-                android:layout_height="44dp"
+                android:layout_height="50dp"
                 android:background="@android:color/holo_purple"
                 android:onClick="Thursday"
                 android:text="THURSDAY"
@@ -83,8 +84,8 @@
 
             <Button
                 android:id="@+id/friday"
-                android:layout_width="72dp"
-                android:layout_height="44dp"
+                android:layout_width="83dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_purple"
                 android:onClick="Friday"
@@ -102,14 +103,28 @@
 
     <TextView
         android:id="@+id/displayInfo1"
-        android:layout_width="336dp"
-        android:layout_height="417dp"
+        android:layout_width="385dp"
+        android:layout_height="493dp"
         android:scrollbars="vertical"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
+        app:layout_constraintVertical_bias="0.655" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Monday"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

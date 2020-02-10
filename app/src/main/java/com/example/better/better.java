@@ -75,10 +75,6 @@ public class better extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-
-
-
     }
 
     @Override
@@ -95,12 +91,33 @@ public class better extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    int lab = getLab5();
+    public static final String MyPREFERENCES = "com.example.labs" ;
+    public static final String Lab1 = "l1key";
+    public static final String Lab2 = "l2key";
+    public static final String Lab3 = "l3key";
+    public static final String Lab4 = "l4key";
+    public static final String Lab5 = "l5key";
+
+    SharedPreferences sharedpreferences;
+
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
-        if (activity.contains("lecture")||activity.contains("Lab " + lab)) {
+        if (activity.contains("Lecture") || activity.contains("Lab " + sharedpreferences.getInt(Lab1, 0)) || activity.contains("Lab" + sharedpreferences.getInt(Lab2, 0))
+                || activity.contains("Seminar " + sharedpreferences.getInt(Lab3, 0)) || activity.contains("Lab " + sharedpreferences.getInt(Lab4, 0))
+                || activity.contains("Lab " + sharedpreferences.getInt(Lab5, 0))) {
             displayTimetable.append("Activity: " + activity + "\n" + "Description: " + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n\n");
         }
+    }
+
+    public void Set_Preferences(int l1, int l2, int l3, int l4, int l5){
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        editor.putInt(Lab1,l1);
+        editor.putInt(Lab2,l2);
+        editor.putInt(Lab3,l3);
+        editor.putInt(Lab4,l4);
+        editor.putInt(Lab5,l5);
+        editor.apply();
     }
 
     public void exit (View view){
@@ -195,19 +212,6 @@ public class better extends AppCompatActivity {
         anthony.setVisibility(View.VISIBLE);
         felipe.setVisibility(View.VISIBLE);
         camron.setVisibility(View.VISIBLE);
-    }
-
-    public void enter (View view){
-        EditText cs1 = findViewById(R.id.editText);
-        EditText cs2 = findViewById(R.id.editText2);
-        EditText cs3 = findViewById(R.id.editText3);
-        EditText cs4 = findViewById(R.id.editText4);
-        EditText cs5 = findViewById(R.id.editText5);
-        cs1.setText("Updated");
-        cs2.setText("Updated");
-        cs3.setText("Updated");
-        cs4.setText("Updated");
-        cs5.setText("Updated");
     }
 
     //Here starts the code for the CONTROL TIMETABLE assignment ANAS ZOUHIR
@@ -360,7 +364,7 @@ public class better extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Wednesday (View view){
-        displayTimetable = (TextView) findViewById(R.id.displayInfo1);
+        displayTimetable = findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
         displayTimetable.setMovementMethod(new ScrollingMovementMethod());
@@ -527,62 +531,61 @@ public class better extends AppCompatActivity {
         EditText cs4 = findViewById(R.id.editText4);
         EditText cs5 = findViewById(R.id.editText5);
         TextView display = findViewById(R.id.textView2);
-
-            if (getLab1() != empty && getLab2() != empty && getLab3() != empty && getLab4() != empty && getLab5() != empty) {
-                display.setText(getLab1()+" "+getLab2()+" "+getLab3()+" "+getLab4()+" "+getLab5());
-            }
+//
+//            if (getLab1() != empty && getLab2() != empty && getLab3() != empty && getLab4() != empty && getLab5() != empty) {
+//                display.setText(getLab1()+" "+getLab2()+" "+getLab3()+" "+getLab4()+" "+getLab5());
+//            }
             try {
                 int c1 = Integer.parseInt(cs1.getText().toString());
                 int c2 = Integer.parseInt(cs2.getText().toString());
                 int c3 = Integer.parseInt(cs3.getText().toString());
                 int c4 = Integer.parseInt(cs4.getText().toString());
                 int c5 = Integer.parseInt(cs5.getText().toString());
-                SetLabs(c1, c2, c3, c4, c5);
-                display.setText(getLab1() + " " + getLab2() + " " + getLab3() + " " + getLab4() + " " + getLab5());
+                Set_Preferences(c1,c2,c3,c4,c5);
             } catch (Exception e){
                 display.setText("Enter something please");
             }
     }
 
-    public void SetLabs(int c1, int c2, int c3, int c4, int c5){
-        try {
-            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = preference.edit();
-            editor.putInt("CS2001", c1);
-            editor.putInt("CS2002", c2);
-            editor.putInt("CS2003", c3);
-            editor.putInt("CS2004", c4);
-            editor.putInt("CS2005", c5);
-            editor.apply();
-        }catch (Exception e){
-            TextView display = findViewById(R.id.textView2);
-            display.setText("ERROR idiot try again!");
-        }
-    }
+//    public void SetLabs(int c1, int c2, int c3, int c4, int c5){
+//        try {
+//            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+//            SharedPreferences.Editor editor = preference.edit();
+//            editor.putInt("CS2001", c1);
+//            editor.putInt("CS2002", c2);
+//            editor.putInt("CS2003", c3);
+//            editor.putInt("CS2004", c4);
+//            editor.putInt("CS2005", c5);
+//            editor.apply();
+//        }catch (Exception e){
+//            TextView display = findViewById(R.id.textView2);
+//            display.setText("ERROR idiot try again!");
+//        }
+//    }
 
-    public int getLab1(){
-        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-        int Lab2001 = preference.getInt("CS2001", 0);
-        return Lab2001;
-    }
-        public int getLab2(){
-            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-        int Lab2002 = preference.getInt("CS2002", 0);
-        return Lab2002;
-    }
-        public int getLab3(){
-        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-        int Lab2003 = preference.getInt("CS2003", 0);
-        return Lab2003;
-    }
-        public int getLab4(){
-        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-        int Lab2004 = preference.getInt("CS2004", 0);
-        return Lab2004;
-    }
-        public int getLab5(){
-        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-        int Lab2005 = preference.getInt("CS2001", 0);
-        return Lab2005;
-    }
+//    public int getLab1(){
+//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+//        int Lab2001 = preference.getInt("CS2001", 0);
+//        return Lab2001;
+//    }
+//        public int getLab2(){
+//            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+//        int Lab2002 = preference.getInt("CS2002", 0);
+//        return Lab2002;
+//    }
+//        public int getLab3(){
+//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+//        int Lab2003 = preference.getInt("CS2003", 0);
+//        return Lab2003;
+//    }
+//        public int getLab4(){
+//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+//        int Lab2004 = preference.getInt("CS2004", 0);
+//        return Lab2004;
+//    }
+//        public int getLab5(){
+//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
+//        int Lab2005 = preference.getInt("CS2001", 0);
+//        return Lab2005;
+//    }
 }

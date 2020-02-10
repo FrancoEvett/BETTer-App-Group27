@@ -55,27 +55,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void on_click (View view){
-        EditText Username = (EditText) findViewById(R.id.Username);
-        EditText Password = (EditText) findViewById(R.id.Password);
-        String userName = Username.getText().toString();
-        String passWord = Password.getText().toString();
-        TextView Error =  findViewById(R.id.errorMsg);
-        if (((userName == null) || (userName.isEmpty()== true)) || ((passWord == null) || (passWord.isEmpty() == true))){
-            Error.setText("Error");
-        }
-        else {
-            if (userAccountControll.Login(userName, passWord)){
-                //login sucessfull
-                Intent intent = new Intent(this, better.class);
-                startActivity(intent);
-            }
-            else {
-               // Error.setText("Invalid Login");
-                popup("Error", "Invalid login" );
+//        EditText Username = (EditText) findViewById(R.id.Username);
+////        EditText Password = (EditText) findViewById(R.id.Password);
+////        String userName = Username.getText().toString();
+////        String passWord = Password.getText().toString();
+////        TextView Error =  findViewById(R.id.errorMsg);
+////        if (((userName == null) || (userName.isEmpty()== true)) || ((passWord == null) || (passWord.isEmpty() == true))){
+////            Error.setText("Error");
+////        }
+////        else {
+////            if (userAccountControll.Login(userName, passWord)){
+////                //login sucessfull
+////                Intent intent = new Intent(this, better.class);
+////                startActivity(intent);
+////            }
+////            else {
+////               // Error.setText("Invalid Login");
+////                popup("Error", "Invalid login" );
+////
+////            }
+////
+////        }
 
-            }
-
-        }
+        Intent intent = new Intent(this, better.class);
+        startActivity(intent);
     }
 
 

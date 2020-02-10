@@ -78,8 +78,8 @@
 
     <Button
         android:id="@+id/sign_up"
-        android:layout_width="143dp"
-        android:layout_height="58dp"
+        android:layout_width="181dp"
+        android:layout_height="39dp"
         android:background="@drawable/signup"
         android:onClick="signNewAccount"
         android:text="Sign Up"
@@ -87,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <EditText
         android:id="@+id/userEmail"
@@ -108,17 +108,17 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="156dp"
-        android:layout_height="149dp"
+        android:layout_width="419dp"
+        android:layout_height="154dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089"
-        app:srcCompat="@drawable/user" />
+        app:layout_constraintVertical_bias="0.051"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView11"
@@ -131,18 +131,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.843" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="75dp"
-        android:layout_height="42dp"
-        android:background="@android:color/holo_red_dark"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="119dp"
+        android:layout_height="95dp"
         android:onClick="back"
-        android:text="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
+        app:layout_constraintVertical_bias="0.932"
+        app:srcCompat="@drawable/back_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
