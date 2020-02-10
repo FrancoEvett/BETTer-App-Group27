@@ -2,8 +2,6 @@ package com.example.better;
 
 import android.os.AsyncTask;
 
-import com.example.better.ui.DatabaseBridge;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,8 +18,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-import com.example.better.ui.DatabaseBridge;
-
 public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> {
     DatabaseBridge databaseBridge = new DatabaseBridge();
 
@@ -33,10 +29,10 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
         String type = voids[0];
 
         String userLoginURL = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
-       // String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
+        // String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
 
         String userRegURL ="https://brunelbetterapp.000webhostapp.com/userRegister.php";
-       //String userRegURL = "http://10.0.2.2/andriodApp/userRegister.php";
+        //String userRegURL = "http://10.0.2.2/andriodApp/userRegister.php";
 
         if(type.equals("Login")){
             String studentID = voids[1];
@@ -56,6 +52,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
 
                 //Reading data from server/Page
                 //Reading the results
+               int Reponse =  httpURLConnection.getResponseCode();
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
                 String result = "";
@@ -94,11 +91,10 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                         //   UserAccountControll.checker = true;
                         //   UserAccountControll.userDetails(student_ID,userName,userEmail,userPassword);
                     }
-
+                        return "";
                     //Send this data from this to another method
 
                 }
-                return "";
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();

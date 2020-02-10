@@ -1,16 +1,14 @@
-package com.example.better.ui;
+package com.example.better;
 
 import android.util.Log;
 
-import com.example.better.Account;
-import com.example.better.DatabaseControllerForUsers;
 
 public class DatabaseBridge {
 
-    public static String studentID = null;
-    public static String userName = null;
-    public static String userEmail = null;
-    public static String userPass = null ;
+    public static String studentID ;
+    public static String userName ;
+    public static String userEmail;
+    public static String userPass;
     public static String check_info;
 
 
@@ -20,11 +18,15 @@ public class DatabaseBridge {
 
         DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
         databaseControllerForUsers.execute(type,iD);
+
         try {
-            Thread.sleep(100);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+
+
         Log.d("Error",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
 
         if(studentID == null){
@@ -34,7 +36,7 @@ public class DatabaseBridge {
             Account account = new Account(studentID,userName,userEmail,userPass);
             return account;
 
-            }
+        }
         return null;
 
     }

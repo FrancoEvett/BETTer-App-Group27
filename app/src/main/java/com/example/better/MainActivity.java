@@ -71,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
             }
             else {
                // Error.setText("Invalid Login");
-                popup("Error", "Invalid login" );
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    popup("Error", "Invalid login" );
+                }
 
             }
 
@@ -79,9 +81,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void signNewAccount(View view){
-
-    }
 
     public void sign_new_account (View v){
         EditText ID = findViewById(R.id.studentID);
