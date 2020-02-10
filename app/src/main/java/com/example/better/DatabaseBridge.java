@@ -1,4 +1,4 @@
-package com.example.better.ui;
+package com.example.better;
 
 import android.util.Log;
 
@@ -18,19 +18,20 @@ public class DatabaseBridge {
         String type = "Login";
         String iD = userID;
 
-        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
+        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers(this);
         databaseControllerForUsers.execute(type,iD);
         try {
             Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Log.d("userLogin Details",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
+        Log.d("User Login Details",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
 
         if(studentID == null){
             Log.d("Error:", "Student ID is null - Cannot Log in" );
         }else
         {
+            Log.d("Database Bridge:", "Login Data Retreival Sucessfull, converting to account" );
             Account account = new Account(studentID,userName,userEmail,userPass);
             return account;
 
@@ -46,7 +47,7 @@ public class DatabaseBridge {
         String user_Email = account.Email;
         String user_pass = account.Password;
 
-        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
+        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers(this);
         databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass);
 
         try {

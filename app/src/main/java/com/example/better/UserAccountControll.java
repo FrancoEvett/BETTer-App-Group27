@@ -12,10 +12,6 @@ package com.example.better;
 //none of the data needs to be accessed by anyone else spo here i will store all of the information
 //on lab data in this class - i will be making binary files on the local storage (this give us more to write about since we have already done databases)
 
-import android.util.Log;
-
-import com.example.better.ui.DatabaseBridge;
-
 public class UserAccountControll {
     private DatabaseBridge databaseBridge = new DatabaseBridge();
     private Account loggedINAccount = null;
