@@ -65,7 +65,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                 httpURLConnection.disconnect();
 
                 //Parsing the data and then passing it to the data here
-                if(result.equals("Doesn't Exist")){
+                if(result.equals("User Doesn't Exist")){
                     return null;
                     //check something
                 }
