@@ -2,13 +2,15 @@ package com.example.better;
 
 import android.util.Log;
 
+import com.example.better.Account;
+import com.example.better.DatabaseControllerForUsers;
 
 public class DatabaseBridge {
 
-    public static String studentID ;
-    public static String userName ;
-    public static String userEmail;
-    public static String userPass;
+    public static String studentID = null;
+    public static String userName = null;
+    public static String userEmail = null;
+    public static String userPass = null ;
     public static String check_info;
 
 
@@ -16,27 +18,24 @@ public class DatabaseBridge {
         String type = "Login";
         String iD = userID;
 
-        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
+        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers(this);
         databaseControllerForUsers.execute(type,iD);
-
         try {
-            Thread.sleep(1000);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-
-
-        Log.d("Error",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
+        Log.d("User Login Details",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
 
         if(studentID == null){
-            Log.d("Error:", "due to null" );
+            Log.d("Error:", "Student ID is null - Cannot Log in" );
         }else
         {
+            Log.d("Database Bridge:", "Login Data Retreival Sucessfull, converting to account" );
             Account account = new Account(studentID,userName,userEmail,userPass);
             return account;
 
-        }
+            }
         return null;
 
     }
@@ -48,7 +47,7 @@ public class DatabaseBridge {
         String user_Email = account.Email;
         String user_pass = account.Password;
 
-        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
+        DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers(this);
         databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass);
 
         try {

@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)

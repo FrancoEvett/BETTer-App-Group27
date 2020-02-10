@@ -1,6 +1,7 @@
 package com.example.better;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,8 +20,12 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> {
-    DatabaseBridge databaseBridge = new DatabaseBridge();
 
+    DatabaseBridge databaseBridge;
+    //added this method for instancing correction
+    DatabaseControllerForUsers(DatabaseBridge databaseBridgeReference){
+        databaseBridge = databaseBridgeReference;//this is now the instance of the class that is calling this class as opposed to a new instance
+    }
 
 
     //we are going to get all the data from here/ this class and then i am going to make another class you deals with the true and false part
@@ -29,10 +34,10 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
         String type = voids[0];
 
         String userLoginURL = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
-        // String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
+       // String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
 
         String userRegURL ="https://brunelbetterapp.000webhostapp.com/userRegister.php";
-        //String userRegURL = "http://10.0.2.2/andriodApp/userRegister.php";
+       //String userRegURL = "http://10.0.2.2/andriodApp/userRegister.php";
 
         if(type.equals("Login")){
             String studentID = voids[1];
@@ -52,7 +57,6 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
 
                 //Reading data from server/Page
                 //Reading the results
-               int Reponse =  httpURLConnection.getResponseCode();
                 InputStream inputStream = httpURLConnection.getInputStream();
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
                 String result = "";
@@ -84,17 +88,18 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                         databaseBridge.userName = userName;
                         databaseBridge.userEmail = userEmail;
                         databaseBridge.userPass = userPassword;
-
+                        Log.d("Database","Success at getting data from database");
 
                         //  Log.d("Errpr", studentID + " " +userName +" "+ userEmail +" "+userPassword);
 
                         //   UserAccountControll.checker = true;
                         //   UserAccountControll.userDetails(student_ID,userName,userEmail,userPassword);
                     }
-                        return "";
+
                     //Send this data from this to another method
 
                 }
+                return "";
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
