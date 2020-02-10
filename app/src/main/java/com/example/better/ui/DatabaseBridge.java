@@ -25,10 +25,10 @@ public class DatabaseBridge {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Log.d("Error",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
+        Log.d("userLogin Details",studentID + " "+userName+ " "+ userEmail+ " " +userPass);
 
         if(studentID == null){
-            Log.d("Error:", "due to null" );
+            Log.d("Error:", "Student ID is null - Cannot Log in" );
         }else
         {
             Account account = new Account(studentID,userName,userEmail,userPass);
