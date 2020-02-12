@@ -29,10 +29,10 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
         String type = voids[0];
 
         String userLoginURL = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
-       // String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
+        // String userLoginURL = "http://10.0.2.2/andriodApp/userLogin.php";
 
         String userRegURL ="https://brunelbetterapp.000webhostapp.com/userRegister.php";
-       //String userRegURL = "http://10.0.2.2/andriodApp/userRegister.php";
+        //String userRegURL = "http://10.0.2.2/andriodApp/userRegister.php";
 
         if(type.equals("Login")){
             String studentID = voids[1];
@@ -65,7 +65,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                 httpURLConnection.disconnect();
 
                 //Parsing the data and then passing it to the data here
-                if(result.equals("Doesn't Exist")){
+                if(result.equals("User Doesn't Exist")){
                     return null;
                     //check something
                 }

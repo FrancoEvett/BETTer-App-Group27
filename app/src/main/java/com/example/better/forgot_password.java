@@ -1,5 +1,6 @@
 package com.example.better;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -16,6 +17,13 @@ String email = "BETTer@brunel.ac.uk";
         setContentView(R.layout.activity_forgot_password);
     }
 
+    private void popup(String title, String msg) {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle(title);
+        dialog.setMessage(msg);
+        dialog.show();
+    }
+
     public void forgot_pass (View view){
         EditText em = findViewById(R.id.email);
         TextView mex = findViewById(R.id.textView12);
@@ -24,7 +32,9 @@ String email = "BETTer@brunel.ac.uk";
             mex.setText("Thanks! your request has been received, please check your email for the next step");
         }
         else {
-            mex.setText("Email not recognised, please try again");
+            //mex.setText("Email not recognised, please try again");
+            popup("Error", "Email not recognised, please try again" );
+            // Invalid email Error Message
         }
     }
 

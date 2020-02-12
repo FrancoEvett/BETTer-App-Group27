@@ -12,12 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerForUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerForUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/sign_up.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/sign_up.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,25 +22,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="501">
-                    <caret line="88" column="24" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_26" />
   <component name="ExternalProjectsManager">
@@ -66,10 +42,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseBridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="442">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/forgot_password.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/better.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="209" selection-start-line="209" selection-end-line="209" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,38 +104,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerForUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="182">
+              <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#7263#7264#0" expanded="true" />
+                <element signature="e#7301#7302#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -124,6 +123,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>databaseBridge</find>
+      <find>check_info</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -152,28 +157,28 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_better.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_tools.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/home/HomeFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseControllerForUsers.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/sign_up.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerForUsers.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseBridge.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerForUsers.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,8 +187,145 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="example" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="better" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="drawable" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="drawable-hdpi" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="drawable-ldpi" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="drawable-mdpi" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="menu" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BETTer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\MagerXser\Documents\BETTer-App-Group27" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="res" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="navigation" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -241,15 +383,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/com/example/better" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MysqlTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-hdpi" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.better" />
+    </key>
     <key name="android.template.packageName">
       <recent name="com.example.better" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MagerXser\Documents\BETTer-App-Group27\app\src\main\res\drawable-hdpi" />
+      <recent name="C:\Users\MagerXser\Documents\BETTer-App-Group27\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -460,7 +609,84 @@
       <option name="project" value="LOCAL" />
       <updated>1581036026681</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Imported Class to Prevent Error in the DatabaseConrollerForUsers Class">
+      <created>1581173546537</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581173546537</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changes Some Structure in Database Bridge">
+      <created>1581174891311</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581174891311</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changes Some Structure in Database Bridge">
+      <created>1581175390775</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581175390775</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Revetrted Changes">
+      <created>1581175456945</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1581175456945</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Revetrted Changes">
+      <created>1581251472810</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581251472810</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Revetrted Changes">
+      <created>1581251482706</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1581251482706</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Revetrted Changes">
+      <created>1581251784632</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581251784632</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Revetrted Changes">
+      <created>1581252790448</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1581252790448</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added Some Debug Loggs">
+      <created>1581335669095</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1581335669095</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added Some Debug Loggs">
+      <created>1581336053783</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1581336053783</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Fixed the login thing, I just changed the the 4 files for account.&#10;Account, UserAccountControll, DatabaseBridge and DatabaseControllerForUser to the old version that I had was working to.">
+      <created>1581367169156</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1581367169156</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -477,7 +703,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49825174" visible="true" weight="0.23187633" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49825174" visible="true" weight="0.18283582" />
       <window_info id="Structure" order="2" sideWeight="0.5034965" side_tool="true" weight="0.3295302" />
       <window_info id="Favorites" order="3" sideWeight="0.50174826" side_tool="true" weight="0.21543624" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -485,14 +711,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" sideWeight="0.4965035" weight="0.3295302" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49463087" weight="0.16713881" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946696" weight="0.33333334" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49463087" weight="0.32502708" />
+      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946696" weight="0.33261105" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4989339" weight="0.3279743" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49307036" visible="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49307036" weight="0.3290461" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49840087" weight="0.32827735" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5010661" side_tool="true" weight="0.3290461" />
-      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.4966443" weight="0.244373" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.48987207" weight="0.19399786" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50373137" side_tool="true" weight="0.24377032" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="6" sideWeight="0.49626866" visible="true" weight="0.24330118" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.48987207" weight="0.35691318" />
       <window_info anchor="bottom" id="Android Profiler" order="8" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -501,7 +727,7 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Preview" order="4" weight="0.28926176" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Assistant" order="6" weight="0.020134227" />
+      <window_info anchor="right" id="Assistant" order="6" weight="0.020255864" />
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -580,54 +806,26 @@
     <MESSAGE value="Backend-Login is messed up&#10;&#10;SharedPrefernce has been commented out as it is not working" />
     <MESSAGE value="Franco, please read my comments" />
     <MESSAGE value="Error in signup due to method not being found" />
-    <option name="LAST_COMMIT_MESSAGE" value="Error in signup due to method not being found" />
+    <MESSAGE value="Imported Class to Prevent Error in the DatabaseConrollerForUsers Class" />
+    <MESSAGE value="Changes Some Structure in Database Bridge" />
+    <MESSAGE value="Revetrted Changes" />
+    <MESSAGE value="Added Some Debug Loggs" />
+    <MESSAGE value="Fixed the login thing, I just changed the the 4 files for account.&#10;Account, UserAccountControll, DatabaseBridge and DatabaseControllerForUser to the old version that I had was working to." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the login thing, I just changed the the 4 files for account.&#10;Account, UserAccountControll, DatabaseBridge and DatabaseControllerForUser to the old version that I had was working to." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java</url>
-          <line>8</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java</url>
           <line>46</line>
-          <properties class="com.example.better.MainActivity" method="on_click" />
+          <properties class="com.example.better.MainActivity" method="popup" />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/app/AlertDialog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-          <folding>
-            <element signature="e#2048#2049#0" expanded="true" />
-            <element signature="e#2099#2100#0" expanded="true" />
-            <element signature="e#4611#4612#0" expanded="true" />
-            <element signature="e#4670#4671#0" expanded="true" />
-            <element signature="e#9994#9995#0" expanded="true" />
-            <element signature="e#10053#10054#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_better.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_better_drawer.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -635,39 +833,32 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/better.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/forgot_password.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_share.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_gallery.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_send.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_better.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_slideshow.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/.name">
       <provider selected="true" editor-type-id="text-editor" />
@@ -685,16 +876,8 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/content/ContextWrapper.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_tools.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_better.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/ui/home/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -702,18 +885,6 @@
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/java/lang/Object.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -767,32 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/better.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.0.2/e38e7c85994112b70d4548176128c72b8477c110/appcompat-1.0.2-sources.jar!/androidx/appcompat/app/AppCompatDelegateImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -819,14 +964,6 @@
             <element signature="e#2297#2298#0" expanded="true" />
             <element signature="e#2348#2349#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -914,13 +1051,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="88" column="24" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerUser.java" />
     <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-29/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -939,27 +1070,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerForUsers.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-ldpi/background.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/newbackground.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-867">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_better.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/signup.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseBridge.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/better.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="329">
+          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -968,15 +1139,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/UserAccountControll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="624">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+        <state relative-caret-position="624">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseControllerForUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="67" column="56" lean-forward="true" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7263#7264#0" expanded="true" />
+            <element signature="e#7301#7302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseBridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/better/forgot_password.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
         </state>
       </provider>
     </entry>

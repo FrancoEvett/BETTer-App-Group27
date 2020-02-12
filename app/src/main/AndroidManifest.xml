@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.better">
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,13 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".forgot_password"></activity>
-        <activity android:name=".sign_up" />
+        <activity android:name=".forgot_password"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".sign_up"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".better"
             android:label="@string/title_activity_better"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

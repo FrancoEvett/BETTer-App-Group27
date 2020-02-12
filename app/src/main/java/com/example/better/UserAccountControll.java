@@ -12,8 +12,6 @@ package com.example.better;
 //none of the data needs to be accessed by anyone else spo here i will store all of the information
 //on lab data in this class - i will be making binary files on the local storage (this give us more to write about since we have already done databases)
 
-import com.example.better.ui.DatabaseBridge;
-
 public class UserAccountControll {
 
 
@@ -33,9 +31,9 @@ public class UserAccountControll {
 
         //Account account = databaseBridge.userLogin(userID);
 
-       // databaseBridge.userLogin(userID);
+        // databaseBridge.userLogin(userID);
         Account account = databaseBridge.userLogin(userID);
-     //   Account account = databaseBridge.userDetail();
+        //   Account account = databaseBridge.userDetail();
 
 
         // From here we exit and then use the useDetail for the to check the user details as we pass the info there
@@ -53,7 +51,7 @@ public class UserAccountControll {
         //user exist in database, now check to see if passwords match
         if (!account.TestPassword(UserPassword)){
             return false;
-           // return true;
+            // return true;
 
         }
 
