@@ -7,8 +7,8 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="419dp"
-        android:layout_height="40dp"
+        android:layout_width="448dp"
+        android:layout_height="50dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
