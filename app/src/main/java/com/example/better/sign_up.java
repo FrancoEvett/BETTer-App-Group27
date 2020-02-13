@@ -1,9 +1,11 @@
 package com.example.better;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -14,11 +16,16 @@ import org.w3c.dom.Text;
 public class sign_up extends AppCompatActivity {
 
     UserAccountControll userAccountControll = new UserAccountControll();
+    MainActivity mainActivity = new MainActivity();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
     }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+
     private void popup(String title, String msg) {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle(title);
@@ -44,23 +51,38 @@ public class sign_up extends AppCompatActivity {
         if(((password == null) || (password.isEmpty() == true))  || ((userEmail == null) || (userEmail.isEmpty() == true) ||  ((userName == null) || (userName.isEmpty() ==true)))){
             //editetxt display enter somethigm
             //message.setText("Error");
-            popup("Error", "You have not filled in the sign up" );
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                popup("Error", "You have not filled in the sign up" );
+            }
         }
 
         else {
             if (password.equals(repeatpass) == true) {
                 if (userAccountControll.CreateNewAccount(id, userName, userEmail, password)) {
                     Intent intent = new Intent(this, MainActivity.class);
-                   startActivity(intent);
-                    // Adding all the data j
+                    startActivity(intent);
+
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O  ) {
+                        popup("Success", "Account Created");
+                    }
                 } else {
-                    message.setText("Error has occurred");
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        popup("Error:", "Account Creation Failed. Please try again!");
+                    }
                 }
             } else {
-                message.setText("The 2 passwords are not equal. Please try again!");
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    popup("Error", "Password Do Not Match. Please try again!");
+                }
+
                 // If the password is not the same
             }
         }
+        }
+
+    public void back (View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 
