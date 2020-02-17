@@ -26,6 +26,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
     //we are going to get all the data from here/ this class and then i am going to make another class you deals with the true and false part
     @Override
     protected String doInBackground(String... voids) {
+
         String type = voids[0];
 
         String userLoginURL = "https://brunelbetterapp.000webhostapp.com/userLogin.php";
@@ -90,6 +91,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                         //   UserAccountControll.checker = true;
                         //   UserAccountControll.userDetails(student_ID,userName,userEmail,userPassword);
                     }
+                    databaseBridge.awaitMethod();
 
                     //Send this data from this to another method
 
