@@ -2,7 +2,10 @@ package com.example.better;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.widget.TextView;
+
+import androidx.annotation.RequiresApi;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -17,6 +20,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class BackgroundTask extends AsyncTask<String, Void, String> {
 
     //context

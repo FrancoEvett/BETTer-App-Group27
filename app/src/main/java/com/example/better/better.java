@@ -44,25 +44,17 @@ import java.util.Locale;
 public class better extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-
-
     public static TextView displayTimetable;
 
 
     @Override
+    @RequiresApi(api = Build.VERSION_CODES.O)
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_better);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -102,11 +94,11 @@ public class better extends AppCompatActivity {
 
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
-        if (activity.contains("Lecture") || activity.contains("Lab " + sharedpreferences.getInt(Lab1, 0)) || activity.contains("Lab" + sharedpreferences.getInt(Lab2, 0))
-                || activity.contains("Seminar " + sharedpreferences.getInt(Lab3, 0)) || activity.contains("Lab " + sharedpreferences.getInt(Lab4, 0))
-                || activity.contains("Lab " + sharedpreferences.getInt(Lab5, 0))) {
+     //   if (activity.contains("Lecture") || activity.contains("Lab " + sharedpreferences.getInt(Lab1, 0)) || activity.contains("Lab" + sharedpreferences.getInt(Lab2, 0))
+     //           || activity.contains("Seminar " + sharedpreferences.getInt(Lab3, 0)) || activity.contains("Lab " + sharedpreferences.getInt(Lab4, 0))
+     //           || activity.contains("Lab " + sharedpreferences.getInt(Lab5, 0))) {
             displayTimetable.append("Activity: " + activity + "\n" + "Description: " + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n\n");
-        }
+     //   }
     }
 
     public void Set_Preferences(int l1, int l2, int l3, int l4, int l5){

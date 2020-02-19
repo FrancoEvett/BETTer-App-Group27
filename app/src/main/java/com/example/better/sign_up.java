@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class sign_up extends AppCompatActivity {
 
     UserAccountControll userAccountControll = new UserAccountControll();
