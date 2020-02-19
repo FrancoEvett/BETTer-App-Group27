@@ -20,7 +20,9 @@
         <activity
             android:name=".better"
             android:label="@string/title_activity_better"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
