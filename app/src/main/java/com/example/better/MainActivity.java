@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         String userName = Username.getText().toString();
         String passWord = Password.getText().toString();
         TextView Error =  findViewById(R.id.errorMsg);
+
         if (((userName == null) || (userName.isEmpty()== true)) || ((passWord == null) || (passWord.isEmpty() == true))){
             Error.setText("Error");
         }

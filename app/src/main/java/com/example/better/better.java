@@ -1,42 +1,39 @@
 package com.example.better;
-
+import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
-
 import androidx.annotation.RequiresApi;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 import android.view.Menu;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.TextStyle;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
@@ -44,10 +41,8 @@ import java.util.Locale;
 public class better extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-
-
     public static TextView displayTimetable;
-
+    public static ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,6 +78,14 @@ public class better extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Displayatbeg();
+    }
+
     public static final String MyPREFERENCES = "com.example.labs" ;
     public static final String Lab1 = "l1key";
     public static final String Lab2 = "l2key";
@@ -94,6 +97,11 @@ public class better extends AppCompatActivity {
 
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
+        ArrayList<String> listitems = new ArrayList<>();
+        String wasup = activity + "\n" + description + "\n" + start + "\n" + end + "\n" + room + "\n\n";
+        listitems.add(wasup);
+        ArrayAdapter adapter =new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listitems);
+        listView.setAdapter(adapter);
         if (activity.contains("Lecture") || activity.contains("Lab " + sharedpreferences.getInt(Lab1, 0)) || activity.contains("Lab" + sharedpreferences.getInt(Lab2, 0))
                 || activity.contains("Seminar " + sharedpreferences.getInt(Lab3, 0)) || activity.contains("Lab " + sharedpreferences.getInt(Lab4, 0))
                 || activity.contains("Lab " + sharedpreferences.getInt(Lab5, 0))) {
@@ -113,10 +121,8 @@ public class better extends AppCompatActivity {
     }
 
     public void exit (View view){
-
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);
-
     }
 
     public void go_home (View view){
@@ -235,18 +241,40 @@ public class better extends AppCompatActivity {
         return cdate;
     }
 
-//    @RequiresApi(api = Build.VERSION_CODES.O)
-//    public void Displayatbeg(){
-//        displayTimetable = (TextView) findViewById(R.id.displayInfo1);
-//        displayTimetable.setVisibility(View.VISIBLE);
-//        displayTimetable.setMovementMethod(new ScrollingMovementMethod());
-//        String type = "timetable";
-//        BackgroundTask back = new BackgroundTask(this, displayTimetable);
-//        Calendar c = CurrentDate();
-//        Date dt = c.getTime();
-//        String cdate = changeformat(dt);
-//        back.execute(type, cdate);
-//    }
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void Displayatbeg(){
+        displayTimetable = (TextView) findViewById(R.id.displayInfo1);
+        displayTimetable.setVisibility(View.VISIBLE);
+        displayTimetable.setMovementMethod(new ScrollingMovementMethod());
+        String type = "timetable";
+        BackgroundTask back = new BackgroundTask(this, displayTimetable);
+        Calendar c = CurrentDate();
+        Date dt = c.getTime();
+        String cdate = changeformat(dt);
+        back.execute(type, cdate);
+
+        String date = daysofWeek();
+        if(date.equals("Tue")){
+            Button tue = findViewById(R.id.Tuesday);
+            tue.setBackgroundColor(Color.rgb(128,0,128));
+        }
+        else if (date.equals("Mon")){
+            Button mon = findViewById(R.id.Monday);
+            mon.setBackgroundColor(Color.rgb(128,0,128));
+        }
+        else if (date.equals("Wed")){
+            Button wed = findViewById(R.id.Wednesday);
+            wed.setBackgroundColor(Color.rgb(128,0,128));
+        }
+        else if (date.equals("Thu")){
+            Button thu = findViewById(R.id.Thursday);
+            thu.setBackgroundColor(Color.rgb(128,0,128));
+        }
+        else if (date.equals("Fri")){
+            Button fri = findViewById(R.id.friday);
+            fri.setBackgroundColor(Color.rgb(128,0,128));
+        }
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Monday (View view){

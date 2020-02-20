@@ -26,7 +26,7 @@
                 android:id="@+id/Monday"
                 android:layout_width="72dp"
                 android:layout_height="50dp"
-                android:background="@android:color/holo_purple"
+                android:background="@color/dark_purple"
                 android:onClick="Monday"
                 android:text="MONDAY"
                 android:textColor="@android:color/white"
@@ -41,7 +41,7 @@
                 android:id="@+id/Tuesday"
                 android:layout_width="74dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_purple"
+                android:background="@color/dark_purple"
                 android:onClick="Tuesday"
                 android:text="TUESDAY"
                 android:textColor="@android:color/white"
@@ -56,7 +56,7 @@
                 android:id="@+id/Wednesday"
                 android:layout_width="99dp"
                 android:layout_height="50dp"
-                android:background="@android:color/holo_purple"
+                android:background="@color/dark_purple"
                 android:onClick="Wednesday"
                 android:text="WEDNESDAY"
                 android:textColor="@android:color/white"
@@ -71,7 +71,7 @@
                 android:id="@+id/Thursday"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
-                android:background="@android:color/holo_purple"
+                android:background="@color/dark_purple"
                 android:onClick="Thursday"
                 android:text="THURSDAY"
                 android:textColor="@android:color/white"
@@ -87,7 +87,7 @@
                 android:layout_width="83dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="@android:color/holo_purple"
+                android:background="@color/dark_purple"
                 android:onClick="Friday"
                 android:text="FRIDAY"
                 android:textColor="@android:color/white"
@@ -113,5 +113,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lview"
+        android:layout_width="213dp"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
