@@ -79,7 +79,12 @@ public class better extends AppCompatActivity {
     }
 
 
-
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Displayatbeg();
+    }
 
     public static final String MyPREFERENCES = "com.example.labs" ;
     public static final String Lab1 = "l1key";
