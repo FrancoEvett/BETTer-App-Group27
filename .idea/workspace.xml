@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -427,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582838403656</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Hightlighted Effect is added again">
+      <created>1582838667114</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1582838667114</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -481,7 +487,8 @@
     <MESSAGE value="Fixed the login thing, I just changed the the 4 files for account.&#10;Account, UserAccountControll, DatabaseBridge and DatabaseControllerForUser to the old version that I had was working to." />
     <MESSAGE value="Few design adjustments" />
     <MESSAGE value="Fixed the timetable display issues, &#10;The problem was with the listview" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the timetable display issues, &#10;The problem was with the listview" />
+    <MESSAGE value="Hightlighted Effect is added again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hightlighted Effect is added again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
