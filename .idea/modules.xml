@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/BETTer.iml" filepath="$PROJECT_DIR$/BETTer.iml" />
       <module fileurl="file://$PROJECT_DIR$/BETTer-App-Group27-BETTer.iml" filepath="$PROJECT_DIR$/BETTer-App-Group27-BETTer.iml" group="BETTer" />
       <module fileurl="file://$PROJECT_DIR$/app/BETTer-App-Group27-app.iml" filepath="$PROJECT_DIR$/app/BETTer-App-Group27-app.iml" group="BETTer/app" />
+      <module fileurl="file://$PROJECT_DIR$/BETTer-Group27-BETTer.iml" filepath="$PROJECT_DIR$/BETTer-Group27-BETTer.iml" group="BETTer" />
+      <module fileurl="file://$PROJECT_DIR$/app/BETTer-Group27-app.iml" filepath="$PROJECT_DIR$/app/BETTer-Group27-app.iml" group="BETTer/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -24,6 +24,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.Switch;
@@ -185,25 +186,6 @@ public class better extends AppCompatActivity {
             evtime.setVisibility(View.VISIBLE);
         }
     }
-
-    public void reveal (View view){
-        TextView anas = findViewById(R.id.anas);
-        TextView franco = findViewById(R.id.franco);
-        TextView pruhtvi = findViewById(R.id.pruthvi);
-        TextView romi = findViewById(R.id.romi);
-        TextView anthony = findViewById(R.id.anthony);
-        TextView felipe = findViewById(R.id.felipe);
-        TextView camron = findViewById(R.id.camron);
-
-        anas.setVisibility(View.VISIBLE);
-        franco.setVisibility(View.VISIBLE);
-        pruhtvi.setVisibility(View.VISIBLE);
-        romi.setVisibility(View.VISIBLE);
-        anthony.setVisibility(View.VISIBLE);
-        felipe.setVisibility(View.VISIBLE);
-        camron.setVisibility(View.VISIBLE);
-    }
-
     //Here starts the code for the CONTROL TIMETABLE assignment ANAS ZOUHIR
 
     //This method gets the local date and returns a String with the first 3 chars of the day. Example "Mon" or "Tue"
@@ -600,4 +582,70 @@ public class better extends AppCompatActivity {
 //        int Lab2005 = preference.getInt("CS2001", 0);
 //        return Lab2005;
 //    }
+
+    public void wlfb (View view){
+        ImageView wlfb = findViewById(R.id.wlfb_image);
+        ImageView lect = findViewById(R.id.lect_image);
+        ImageView towc = findViewById(R.id.towc_image);
+        ImageView esgw = findViewById(R.id.esgw_image);
+        ImageView qdnt = findViewById(R.id.qdnt_image);
+
+        lect.setVisibility(View.INVISIBLE);
+        towc.setVisibility(View.INVISIBLE);
+        esgw.setVisibility(View.INVISIBLE);
+        qdnt.setVisibility(View.INVISIBLE);
+        wlfb.setVisibility(View.VISIBLE);
+    }
+    public void lect (View view){
+        ImageView wlfb = findViewById(R.id.wlfb_image);
+        ImageView lect = findViewById(R.id.lect_image);
+        ImageView towc = findViewById(R.id.towc_image);
+        ImageView esgw = findViewById(R.id.esgw_image);
+        ImageView qdnt = findViewById(R.id.qdnt_image);
+
+        towc.setVisibility(View.INVISIBLE);
+        esgw.setVisibility(View.INVISIBLE);
+        qdnt.setVisibility(View.INVISIBLE);
+        wlfb.setVisibility(View.INVISIBLE);
+        lect.setVisibility(View.VISIBLE);
+    }
+    public void towc (View view){
+        ImageView wlfb = findViewById(R.id.wlfb_image);
+        ImageView lect = findViewById(R.id.lect_image);
+        ImageView towc = findViewById(R.id.towc_image);
+        ImageView esgw = findViewById(R.id.esgw_image);
+        ImageView qdnt = findViewById(R.id.qdnt_image);
+
+        lect.setVisibility(View.INVISIBLE);
+        esgw.setVisibility(View.INVISIBLE);
+        qdnt.setVisibility(View.INVISIBLE);
+        wlfb.setVisibility(View.INVISIBLE);
+        towc.setVisibility(View.VISIBLE);
+    }
+    public void esgw (View view){
+        ImageView wlfb = findViewById(R.id.wlfb_image);
+        ImageView lect = findViewById(R.id.lect_image);
+        ImageView towc = findViewById(R.id.towc_image);
+        ImageView esgw = findViewById(R.id.esgw_image);
+        ImageView qdnt = findViewById(R.id.qdnt_image);
+
+        lect.setVisibility(View.INVISIBLE);
+        towc.setVisibility(View.INVISIBLE);
+        qdnt.setVisibility(View.INVISIBLE);
+        wlfb.setVisibility(View.INVISIBLE);
+        esgw.setVisibility(View.VISIBLE);
+    }
+    public void qdnt (View view){
+        ImageView wlfb = findViewById(R.id.wlfb_image);
+        ImageView lect = findViewById(R.id.lect_image);
+        ImageView towc = findViewById(R.id.towc_image);
+        ImageView esgw = findViewById(R.id.esgw_image);
+        ImageView qdnt = findViewById(R.id.qdnt_image);
+        
+        lect.setVisibility(View.INVISIBLE);
+        towc.setVisibility(View.INVISIBLE);
+        esgw.setVisibility(View.INVISIBLE);
+        wlfb.setVisibility(View.INVISIBLE);
+        qdnt.setVisibility(View.VISIBLE);
+    }
 }

@@ -22,8 +22,8 @@
             android:title="Lab Set Up" />
         <item
             android:id="@+id/nav_share"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Settings" />
+            android:icon="@android:drawable/ic_menu_mapmode"
+            android:title="Map" />
         <item
             android:id="@+id/nav_send"
             android:icon="@drawable/btn_close_normal"

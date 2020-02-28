@@ -5,83 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/romi"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:text="ROMI PATEL"
-        android:visibility="invisible"
+    <Button
+        android:id="@+id/LECT"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/dark_purple"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"
+        android:onClick="lect"
+        android:text="LECT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.9" />
 
-    <TextView
-        android:id="@+id/anas"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:text="ANAS ZOUHIR"
-        android:visibility="invisible"
+    <Button
+        android:id="@+id/ESGW"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/dark_purple"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"
+        android:onClick="esgw"
+        android:text="ESGW"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="0.9" />
 
-    <TextView
-        android:id="@+id/felipe"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:text="FELIPE HENRIQUE"
-        android:visibility="invisible"
+    <Button
+        android:id="@+id/TOWC"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/dark_purple"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"
+        android:onClick="towc"
+        android:text="TOWC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.9" />
 
-    <TextView
-        android:id="@+id/pruthvi"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:text="PRUTHVI LALJI"
-        android:visibility="invisible"
+    <Button
+        android:id="@+id/QDNT"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/dark_purple"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"
+        android:onClick="qdnt"
+        android:text="QDNT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.107" />
 
-    <TextView
-        android:id="@+id/franco"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:text="FRANCO EVETT"
-        android:visibility="invisible"
+    <Button
+        android:id="@+id/HWLL"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/dark_purple"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"
+        android:text="HWLL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
-
-    <TextView
-        android:id="@+id/anthony"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:text="ANTHONY YEH"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.107" />
 
     <TextView
         android:id="@+id/text_share"
@@ -95,44 +94,85 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="321dp"
-        android:layout_height="127dp"
-        android:text="This app has been developed by Group 27 - level 2 Computer Science - Brunel University London"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.139" />
+        android:gravity="center_horizontal" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="104dp"
-        android:layout_height="50dp"
-        android:onClick="reveal"
-        android:text="REVEAL"
+        android:id="@+id/WLFB"
+        android:layout_width="91dp"
+        android:layout_height="41dp"
+        android:onClick="wlfb"
+        android:backgroundTint="@color/dark_purple"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_shape"
+        android:text="WLFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348" />
+        app:layout_constraintVertical_bias="0.107" />
 
-    <TextView
-        android:id="@+id/camron"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:onClick="reveal"
-        android:text="CAMRON DARPOH"
+    <ImageView
+        android:id="@+id/esgw_image"
+        android:layout_width="417dp"
+        android:layout_height="472dp"
+        android:verticalScrollbarPosition="defaultPosition"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/easterngateway" />
+
+    <ImageView
+        android:id="@+id/qdnt_image"
+        android:layout_width="417dp"
+        android:layout_height="472dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/esgw_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/halsbury" />
+
+    <ImageView
+        android:id="@+id/lect_image"
+        android:layout_width="417dp"
+        android:layout_height="472dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/esgw_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lecturecentre" />
+
+    <ImageView
+        android:id="@+id/towc_image"
+        android:layout_width="417dp"
+        android:layout_height="472dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/esgw_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/towerc" />
+
+    <ImageView
+        android:id="@+id/wlfb_image"
+        android:layout_width="417dp"
+        android:layout_height="472dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/esgw_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/wilfredbrown" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -65,10 +65,12 @@ public class MainActivity extends AppCompatActivity {
             Error.setText("Error");
         }
         else {
+            Intent intent = new Intent(this, better.class);
+            startActivity(intent);
             if (userAccountControll.Login(userName, passWord)){
                 //login sucessfull
-                Intent intent = new Intent(this, better.class);
-                startActivity(intent);
+//                Intent intent = new Intent(this, better.class);
+//                startActivity(intent);
             }
             else {
                // Error.setText("Invalid Login");
