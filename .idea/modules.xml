@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-BETTer-App-Group27-BETTer.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-BETTer-App-Group27-BETTer.iml" group="BETTer" />
+      <module fileurl="file://$PROJECT_DIR$/app/AndroidStudioProjects-BETTer-App-Group27-app.iml" filepath="$PROJECT_DIR$/app/AndroidStudioProjects-BETTer-App-Group27-app.iml" group="BETTer/app" />
       <module fileurl="file://$PROJECT_DIR$/BETTer.iml" filepath="$PROJECT_DIR$/BETTer.iml" />
       <module fileurl="file://$PROJECT_DIR$/BETTer-App-Group27-BETTer.iml" filepath="$PROJECT_DIR$/BETTer-App-Group27-BETTer.iml" group="BETTer" />
       <module fileurl="file://$PROJECT_DIR$/app/BETTer-App-Group27-app.iml" filepath="$PROJECT_DIR$/app/BETTer-App-Group27-app.iml" group="BETTer/app" />

@@ -223,17 +223,13 @@ public class better extends AppCompatActivity {
         String type = "timetable";
         BackgroundTask back = new BackgroundTask(this, displayTimetable);
         Calendar c = CurrentDate();
-        Date dt = c.getTime();
-        String cdate = changeformat(dt);
-        back.execute(type, cdate);
-
+        Button mon = findViewById(R.id.Monday);
         String date = daysofWeek();
         if(date.equals("Tue")){
             Button tue = findViewById(R.id.Tuesday);
             tue.setBackgroundColor(Color.rgb(128,0,128));
         }
         else if (date.equals("Mon")){
-            Button mon = findViewById(R.id.Monday);
             mon.setBackgroundColor(Color.rgb(128,0,128));
         }
         else if (date.equals("Wed")){
@@ -248,6 +244,17 @@ public class better extends AppCompatActivity {
             Button fri = findViewById(R.id.friday);
             fri.setBackgroundColor(Color.rgb(128,0,128));
         }
+        else if (date.equals("Sat")){
+            mon.setBackgroundColor(Color.rgb(128,0,128));
+            c.add(Calendar.DAY_OF_WEEK,+2);
+        }
+        else{
+            mon.setBackgroundColor(Color.rgb(128,0,128));
+            c.add(Calendar.DAY_OF_WEEK,+1);
+        }
+        Date dt = c.getTime();
+        String cdate = changeformat(dt);
+        back.execute(type, cdate);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)

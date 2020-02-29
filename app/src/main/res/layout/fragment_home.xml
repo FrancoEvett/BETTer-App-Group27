@@ -114,15 +114,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lview"
-        android:layout_width="213dp"
-        android:layout_height="330dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
