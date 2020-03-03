@@ -12,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/StudioProjects-BETTer-App-Group27-BETTer.iml" filepath="$PROJECT_DIR$/StudioProjects-BETTer-App-Group27-BETTer.iml" group="BETTer" />
       <module fileurl="file://$PROJECT_DIR$/app/StudioProjects-BETTer-App-Group27-app.iml" filepath="$PROJECT_DIR$/app/StudioProjects-BETTer-App-Group27-app.iml" group="BETTer/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m-BETTer.iml" filepath="$PROJECT_DIR$/m-BETTer.iml" group="BETTer" />
+      <module fileurl="file://$PROJECT_DIR$/app/m-app.iml" filepath="$PROJECT_DIR$/app/m-app.iml" group="BETTer/app" />
     </modules>
   </component>
 </project>

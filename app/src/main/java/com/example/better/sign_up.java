@@ -42,7 +42,15 @@ public class sign_up extends AppCompatActivity {
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel);
         }
-
+        FirebaseInstanceId.getInstance().getInstanceId()
+                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                        if(task.isSuccessful()){
+                            token = task.getResult().getToken();
+                        }
+                    }
+                });
     }
 
 
@@ -71,17 +79,9 @@ public class sign_up extends AppCompatActivity {
         pass.setText("");
         repass.setText("");
 
-        FirebaseInstanceId.getInstance().getInstanceId()
-                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                        if(task.isSuccessful()){
-                            token = task.getResult().getToken();
-                        }
-                    }
-                });
 
-        if(((password == null) || (password.isEmpty() == true))  || ((userEmail == null) || (userEmail.isEmpty() == true) ||  ((userName == null) || (userName.isEmpty() ==true)))){
+
+        if(((password == null) || (password.isEmpty() == true))  || ((userEmail == null) || (userEmail.isEmpty() == true) ||  ((userName == null) || (userName.isEmpty() ==true)) || (token == null))){
             //editetxt display enter somethigm
             //message.setText("Error");
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
