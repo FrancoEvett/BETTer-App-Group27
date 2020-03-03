@@ -12,17 +12,19 @@ public class Account {
     public String Name;
     public String Email;
     public String Password;
+    public String Token;
 
     private boolean encrypted;
     private Hashtable<String, String> hashtable;
 
-    public Account(String userStudentID, String userName, String userEmail, String userPassword){
+    public Account(String userStudentID, String userName, String userEmail, String userPassword, String userToken){
         PopulateHashTable();
         //initialise variables to class from constructor
         StudentID = userStudentID;
         Name = userName;
         Email = userEmail;
         Password = userPassword;
+        Token = userToken;
         EncryptPassword();
     }
     public boolean TestPassword(String passwordIN){

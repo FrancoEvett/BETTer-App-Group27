@@ -1,15 +1,23 @@
 package com.example.better;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 
 import org.w3c.dom.Text;
 
@@ -18,10 +26,23 @@ public class sign_up extends AppCompatActivity {
 
     UserAccountControll userAccountControll = new UserAccountControll();
     MainActivity mainActivity = new MainActivity();
+    public static final String CHANNEL_ID = "Main 1";
+    public static final String CHANNEL_NAME = "Main 2";
+    public static final String CHANNEL_DESC = "Notification";
+    public static String token;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
+            channel.setDescription(CHANNEL_DESC);
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+
     }
 
 
@@ -49,6 +70,17 @@ public class sign_up extends AppCompatActivity {
         ID.setText("");
         pass.setText("");
         repass.setText("");
+
+        FirebaseInstanceId.getInstance().getInstanceId()
+                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                        if(task.isSuccessful()){
+                            token = task.getResult().getToken();
+                        }
+                    }
+                });
+
         if(((password == null) || (password.isEmpty() == true))  || ((userEmail == null) || (userEmail.isEmpty() == true) ||  ((userName == null) || (userName.isEmpty() ==true)))){
             //editetxt display enter somethigm
             //message.setText("Error");
@@ -59,14 +91,17 @@ public class sign_up extends AppCompatActivity {
 
         else {
             if (password.equals(repeatpass) == true) {
-                if (userAccountControll.CreateNewAccount(id, userName, userEmail, password)) {
+                if (userAccountControll.CreateNewAccount(id, userName, userEmail, password,token)) {
+
                     Intent intent = new Intent(this, MainActivity.class);
                     startActivity(intent);
 
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O  ) {
                         popup("Success", "Account Created");
                     }
-                } else {
+                }
+                else
+                    {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                         popup("Error:", "Account Creation Failed. Please try again!");
                     }

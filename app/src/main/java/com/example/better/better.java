@@ -43,7 +43,6 @@ public class better extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     public static TextView displayTimetable;
-    public static ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,22 +1,28 @@
 package com.example.better;
 
-import android.content.Context;
+import android.os.Build;
 
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
+import androidx.annotation.RequiresApi;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
+import com.google.firebase.messaging.RemoteMessage;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
-    public static void displayNotification(Context context, String title, String body){
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context,Notification.CHANNEL_ID)
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle(title)
-                .setContentTitle(body)
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    public void onMessageReceived(RemoteMessage remoteMessage) {
+        super.onMessageReceived(remoteMessage);
 
-        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
-        notificationManagerCompat.notify(1,mBuilder.build());
+
+        if (remoteMessage.getNotification() !=null){
+            String title = remoteMessage.getNotification().getTitle();
+            String body = remoteMessage.getNotification().getBody();
+
+            notification_helper.displayNotification(getApplicationContext(), title,body);
+
+        }
     }
+
+
 }

@@ -78,12 +78,14 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                         String userName = jsonObject.get("userName").toString();
                         String userEmail = jsonObject.get("userEmail").toString();
                         String userPassword = jsonObject.get("userPassword").toString();
+                        String userToken = jsonObject.get("userToken").toString();
 
 
                         databaseBridge.studentID = student_ID;
                         databaseBridge.userName = userName;
                         databaseBridge.userEmail = userEmail;
                         databaseBridge.userPass = userPassword;
+                        databaseBridge.userToken = userToken;
 
 
                         //  Log.d("Errpr", studentID + " " +userName +" "+ userEmail +" "+userPassword);
@@ -111,6 +113,7 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
             String userName = voids[2];
             String userEmail = voids[3];
             String userPassword = voids[4];
+            String userToken = voids[5];
             try{
                 URL url = new URL(userRegURL);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -122,7 +125,8 @@ public class DatabaseControllerForUsers extends AsyncTask<String, Void, String> 
                 String post_data = URLEncoder.encode("studentID", "UTF-8") + "=" + URLEncoder.encode(studentID, "UTF-8") + "&"
                         + URLEncoder.encode("userName", "UTF-8") + "=" + URLEncoder.encode(userName, "UTF-8") + "&"
                         + URLEncoder.encode("userEmail", "UTF-8") + "=" + URLEncoder.encode(userEmail, "UTF-8") + "&"
-                        + URLEncoder.encode("userPassword", "UTF-8") + "=" + URLEncoder.encode(userPassword, "UTF-8");
+                        + URLEncoder.encode("userPassword", "UTF-8") + "=" + URLEncoder.encode(userPassword, "UTF-8")+ "&"
+                        + URLEncoder.encode("userToken", "UTF-8") + "=" + URLEncoder.encode(userToken, "UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();

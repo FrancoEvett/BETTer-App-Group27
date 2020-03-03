@@ -13,6 +13,7 @@ public class DatabaseBridge {
     public static String userName ;
     public static String userEmail;
     public static String userPass;
+    public static String userToken;
     public static String check_info;
     public static Boolean await = true;
 
@@ -46,7 +47,7 @@ public class DatabaseBridge {
             Log.d("Error:", "due to null" );
         }else
         {
-            Account account = new Account(studentID,userName,userEmail,userPass);
+            Account account = new Account(studentID,userName,userEmail,userPass, userToken);
             return account;
 
         }
@@ -60,9 +61,10 @@ public class DatabaseBridge {
         String user_Name = account.Name;
         String user_Email = account.Email;
         String user_pass = account.Password;
+        String user_token = account.Token;
 
         DatabaseControllerForUsers databaseControllerForUsers = new DatabaseControllerForUsers();
-        databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass);
+        databaseControllerForUsers.execute(type, user_ID,user_Name,user_Email,user_pass, user_token);
         try {
             databaseControllerForUsers.get(1000, TimeUnit.MILLISECONDS);
         } catch (ExecutionException e) {
