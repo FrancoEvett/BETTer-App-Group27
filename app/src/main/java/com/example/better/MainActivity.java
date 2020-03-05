@@ -70,14 +70,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             if (userAccountControll.Login(userName, passWord)){
                 //login sucessfull
-//                Intent intent = new Intent(this, better.class);
-//                startActivity(intent);
+                //Intent intent = new Intent(this, better.class);
+                //startActivity(intent);
             }
             else {
                // Error.setText("Invalid Login");
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    popup("Error", "Invalid login" );
-                }
+               // if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                   // popup("Error", "Invalid login" );
+               // }
 
             }
 
