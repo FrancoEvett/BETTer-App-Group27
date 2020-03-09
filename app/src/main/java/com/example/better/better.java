@@ -547,6 +547,25 @@ public class better extends AppCompatActivity {
             }
     }
 
+    public void termsButtonClick(View view) {
+        TextView tv = (TextView) findViewById(R.id.textView13);
+        tv.setText(R.string.agree);
+        TextView bv = (TextView) findViewById(R.id.textView14);
+        bv.setText(R.string.terms);
+    }
+
+    public void privacyButtonClick(View view) {
+        TextView tv = (TextView) findViewById(R.id.textView13);
+        tv.setMovementMethod(new ScrollingMovementMethod());
+        tv.setText(R.string.privacy_policy);
+        TextView tv1 = (TextView) findViewById(R.id.textView14);
+        tv1.setMovementMethod(new ScrollingMovementMethod());
+        tv1.setText(R.string.privacy_policy1);
+        TextView tv2 = (TextView) findViewById(R.id.textView15);
+        tv2.setMovementMethod(new ScrollingMovementMethod());
+        tv2.setText(R.string.privacy_policy2);
+    }
+
 //    public void SetLabs(int c1, int c2, int c3, int c4, int c5){
 //        try {
 //            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
