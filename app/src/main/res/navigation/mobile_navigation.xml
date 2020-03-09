@@ -40,4 +40,10 @@
         android:name="com.example.better.ui.send.SendFragment"
         android:label="Logout"
         tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@id/nav_terms"
+        android:name="com.example.better.ui.terms.TermsFragment"
+        android:label="Terms and Conditions"
+        tools:layout="@layout/fragment_terms" />
 </navigation>

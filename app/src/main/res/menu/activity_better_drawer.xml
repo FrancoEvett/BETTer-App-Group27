@@ -28,6 +28,10 @@
             android:id="@+id/nav_send"
             android:icon="@drawable/btn_close_normal"
             android:title="Log Out" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/back_button"
+            android:title="Terms and Conditions"/>
 
     </group>
 
