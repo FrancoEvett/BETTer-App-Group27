@@ -1,9 +1,9 @@
 <?php 
 
 //Making basic connection to the database
-$db_name = "id11747915_timetable";
-$mysql_username = "id11747915_rootbrunel";
-$mysql_pass = "Pruthvidiu123";
+$db_name = "timetable";
+$mysql_username = "root";
+$mysql_pass = "password";
 $server_name = "localhost";
 
 //Making a connection
