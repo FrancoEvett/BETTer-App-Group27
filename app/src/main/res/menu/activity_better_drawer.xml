@@ -24,14 +24,17 @@
             android:id="@+id/nav_share"
             android:icon="@android:drawable/ic_menu_mapmode"
             android:title="Map" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About BETTer"/>
+
         <item
             android:id="@+id/nav_send"
             android:icon="@drawable/btn_close_normal"
             android:title="Log Out" />
-        <item
-            android:id="@+id/nav_terms"
-            android:icon="@drawable/back_button"
-            android:title="Terms and Conditions"/>
+
 
     </group>
 
