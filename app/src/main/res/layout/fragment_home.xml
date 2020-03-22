@@ -104,16 +104,16 @@
 
     <TextView
         android:id="@+id/displayInfo1"
-        android:layout_width="388dp"
-        android:layout_height="599dp"
+        android:layout_width="384dp"
+        android:layout_height="551dp"
         android:scrollbars="vertical"
         android:textColor="@android:color/white"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.655" />
+        app:layout_constraintVertical_bias="0.878" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

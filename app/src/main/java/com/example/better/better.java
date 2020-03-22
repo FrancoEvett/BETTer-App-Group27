@@ -103,9 +103,9 @@ public class better extends AppCompatActivity {
 
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
-        if(activity.contains("Lecture") || activity.contains("Lab " + sharedpreferences.getInt(Lab1, 1))) {
-                displayTimetable.append("Activity: " + activity + "\n" + "Description: " + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n\n");
-            }
+                displayTimetable.append(activity + "\n" + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n"
+                + "----------------------------------------------------------------------------------" + "\n\n");
+
     }
 
     public void Set_Preferences(){
