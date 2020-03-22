@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bckgnd"
     android:layout_height="match_parent">
 
     <HorizontalScrollView
@@ -103,9 +104,10 @@
 
     <TextView
         android:id="@+id/displayInfo1"
-        android:layout_width="385dp"
-        android:layout_height="493dp"
+        android:layout_width="388dp"
+        android:layout_height="599dp"
         android:scrollbars="vertical"
+        android:textColor="@android:color/white"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
