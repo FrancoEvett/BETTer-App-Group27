@@ -265,6 +265,16 @@ public class better extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Monday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(128,0,128));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -318,6 +328,16 @@ public class better extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Tuesday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(128, 0, 128));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -371,6 +391,16 @@ public class better extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Wednesday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(128, 0, 128));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -425,6 +455,16 @@ public class better extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Thursday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(128, 0, 128));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -478,6 +518,16 @@ public class better extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Friday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(128, 0, 128));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
