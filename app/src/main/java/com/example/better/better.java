@@ -93,15 +93,22 @@ public class better extends AppCompatActivity {
     public static final String Lab4 = "l4key";
     public static final String Lab5 = "l5key";
 
+    public int l1;
+    public int l2;
+    public int l3;
+    public int l4;
+    public int l5;
+
     SharedPreferences sharedpreferences;
 
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
-            displayTimetable.append("Activity: " + activity + "\n" + "Description: " + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n\n");
+                displayTimetable.append(activity + "\n" + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n"
+                + "----------------------------------------------------------------------------------" + "\n\n");
 
     }
 
-    public void Set_Preferences(int l1, int l2, int l3, int l4, int l5){
+    public void Set_Preferences(){
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedpreferences.edit();
         editor.putInt(Lab1,l1);
@@ -258,6 +265,16 @@ public class better extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Monday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(128,0,128));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -311,6 +328,16 @@ public class better extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Tuesday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(128, 0, 128));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -364,6 +391,16 @@ public class better extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Wednesday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(128, 0, 128));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -418,6 +455,16 @@ public class better extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Thursday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(128, 0, 128));
+        fri.setBackgroundColor(Color.rgb(48, 25, 52));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -471,6 +518,16 @@ public class better extends AppCompatActivity {
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void Friday (View view){
+        Button mon = findViewById(R.id.Monday);
+        Button tue = findViewById(R.id.Tuesday);
+        Button wed = findViewById(R.id.Wednesday);
+        Button thu = findViewById(R.id.Thursday);
+        Button fri = findViewById(R.id.friday);
+        mon.setBackgroundColor(Color.rgb(48,25,52));
+        tue.setBackgroundColor(Color.rgb(48, 25, 52));
+        wed.setBackgroundColor(Color.rgb(48, 25, 52));
+        thu.setBackgroundColor(Color.rgb(48, 25, 52));
+        fri.setBackgroundColor(Color.rgb(128, 0, 128));
         displayTimetable = (TextView) findViewById(R.id.displayInfo1);
         displayTimetable.setVisibility(View.VISIBLE);
         displayTimetable.setText("");
@@ -536,12 +593,21 @@ public class better extends AppCompatActivity {
 //                display.setText(getLab1()+" "+getLab2()+" "+getLab3()+" "+getLab4()+" "+getLab5());
 //            }
             try {
-                int c1 = Integer.parseInt(cs1.getText().toString());
-                int c2 = Integer.parseInt(cs2.getText().toString());
-                int c3 = Integer.parseInt(cs3.getText().toString());
-                int c4 = Integer.parseInt(cs4.getText().toString());
-                int c5 = Integer.parseInt(cs5.getText().toString());
-                Set_Preferences(c1,c2,c3,c4,c5);
+                l1 = Integer.parseInt(cs1.getText().toString());
+                l2 = Integer.parseInt(cs2.getText().toString());
+                l3 = Integer.parseInt(cs3.getText().toString());
+                l4 = Integer.parseInt(cs4.getText().toString());
+                l5 = Integer.parseInt(cs5.getText().toString());
+
+                sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                editor.putInt(Lab1,l1);
+                editor.putInt(Lab2,l2);
+                editor.putInt(Lab3,l3);
+                editor.putInt(Lab4,l4);
+                editor.putInt(Lab5,l5);
+                editor.apply();
+//                Set_Preferences(c1,c2,c3,c4,c5);
             } catch (Exception e){
                 display.setText("Enter something please");
             }

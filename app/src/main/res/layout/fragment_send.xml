@@ -3,20 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bckgnd"
     android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="122dp"
-        android:layout_height="60dp"
-        android:onClick="go_home"
-        android:text="NO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.724"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
 
     <TextView
         android:id="@+id/text_send"
@@ -34,26 +22,41 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="312dp"
-        android:layout_height="137dp"
+        android:layout_width="317dp"
+        android:layout_height="195dp"
         android:text="ARE YOU SURE YOU WANT TO LOG OUT FROM THE APP?"
-        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_send"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.271" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="122dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
         android:onClick="exit"
-        android:text="YES"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:layout_constraintVertical_bias="0.628"
+        app:srcCompat="@drawable/yesbtn" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="109dp"
+        android:layout_height="81dp"
+        android:onClick="go_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624"
+        app:srcCompat="@drawable/nobtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
