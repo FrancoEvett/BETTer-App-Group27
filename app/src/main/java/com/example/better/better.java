@@ -786,7 +786,7 @@ public class better extends AppCompatActivity {
         ImageView qdnt = findViewById(R.id.qdnt_image);
         ImageView hwll = findViewById(R.id.howell);
         ImageView orig = findViewById(R.id.originalmap);
-        
+
         orig.setVisibility(View.VISIBLE);
         hwll.setVisibility(View.INVISIBLE);
         lect.setVisibility(View.INVISIBLE);
