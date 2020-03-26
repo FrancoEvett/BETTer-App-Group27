@@ -38,5 +38,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.squareup.okhttp3:okhttp:4.3.1'
     implementation "com.google.firebase:firebase-messaging:$firebase_version"
+    implementation fileTree(dir: 'C:\\Users\\anasz\\AndroidStudioProjects\\BETTer_17-03\\libs', include: ['*.aar', '*.jar'], exclude: [])
 
 }

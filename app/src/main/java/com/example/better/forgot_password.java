@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class forgot_password extends AppCompatActivity {
 String email = "BETTer@brunel.ac.uk";
@@ -28,14 +30,6 @@ String email = "BETTer@brunel.ac.uk";
         EditText em = findViewById(R.id.email);
         TextView mex = findViewById(R.id.textView12);
         String usermail = em.getText().toString();
-        if (email.equals(usermail) == true){
-            mex.setText("Thanks! your request has been received, please check your email for the next step");
-        }
-        else {
-            //mex.setText("Email not recognised, please try again");
-            popup("Error", "Email not recognised, please try again" );
-            // Invalid email Error Message
-        }
     }
 
     public void back (View view){

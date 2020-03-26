@@ -86,18 +86,18 @@ public class better extends AppCompatActivity {
         Displayatbeg();
     }
 
-    public static final String MyPREFERENCES = "com.example.labs" ;
-    public static final String Lab1 = "l1key";
-    public static final String Lab2 = "l2key";
-    public static final String Lab3 = "l3key";
-    public static final String Lab4 = "l4key";
-    public static final String Lab5 = "l5key";
-
-    public int l1;
-    public int l2;
-    public int l3;
-    public int l4;
-    public int l5;
+//    public static final String MyPREFERENCES = "com.example.labs" ;
+//    public static final String Lab1 = "l1key";
+//    public static final String Lab2 = "l2key";
+//    public static final String Lab3 = "l3key";
+//    public static final String Lab4 = "l4key";
+//    public static final String Lab5 = "l5key";
+//
+//    public int l1;
+//    public int l2;
+//    public int l3;
+//    public int l4;
+//    public int l5;
 
     SharedPreferences sharedpreferences;
 
@@ -108,16 +108,16 @@ public class better extends AppCompatActivity {
 
     }
 
-    public void Set_Preferences(){
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedpreferences.edit();
-        editor.putInt(Lab1,l1);
-        editor.putInt(Lab2,l2);
-        editor.putInt(Lab3,l3);
-        editor.putInt(Lab4,l4);
-        editor.putInt(Lab5,l5);
-        editor.apply();
-    }
+//    public void Set_Preferences(){
+//        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+//        SharedPreferences.Editor editor = sharedpreferences.edit();
+//        editor.putInt(Lab1,l1);
+//        editor.putInt(Lab2,l2);
+//        editor.putInt(Lab3,l3);
+//        editor.putInt(Lab4,l4);
+//        editor.putInt(Lab5,l5);
+//        editor.apply();
+//    }
 
     public void exit (View view){
         android.os.Process.killProcess(android.os.Process.myPid());
@@ -593,20 +593,20 @@ public class better extends AppCompatActivity {
 //                display.setText(getLab1()+" "+getLab2()+" "+getLab3()+" "+getLab4()+" "+getLab5());
 //            }
             try {
-                l1 = Integer.parseInt(cs1.getText().toString());
-                l2 = Integer.parseInt(cs2.getText().toString());
-                l3 = Integer.parseInt(cs3.getText().toString());
-                l4 = Integer.parseInt(cs4.getText().toString());
-                l5 = Integer.parseInt(cs5.getText().toString());
-
-                sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedpreferences.edit();
-                editor.putInt(Lab1,l1);
-                editor.putInt(Lab2,l2);
-                editor.putInt(Lab3,l3);
-                editor.putInt(Lab4,l4);
-                editor.putInt(Lab5,l5);
-                editor.apply();
+                int l1 = Integer.parseInt(cs1.getText().toString());
+                int l2 = Integer.parseInt(cs2.getText().toString());
+                int l3 = Integer.parseInt(cs3.getText().toString());
+                int l4 = Integer.parseInt(cs4.getText().toString());
+                int l5 = Integer.parseInt(cs5.getText().toString());
+//
+//                sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+//                SharedPreferences.Editor editor = sharedpreferences.edit();
+//                editor.putInt(Lab1,l1);
+//                editor.putInt(Lab2,l2);
+//                editor.putInt(Lab3,l3);
+//                editor.putInt(Lab4,l4);
+//                editor.putInt(Lab5,l5);
+//                editor.apply();
 //                Set_Preferences(c1,c2,c3,c4,c5);
             } catch (Exception e){
                 display.setText("Enter something please");
