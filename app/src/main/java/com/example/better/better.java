@@ -680,7 +680,9 @@ public class better extends AppCompatActivity {
         ImageView towc = findViewById(R.id.towc_image);
         ImageView esgw = findViewById(R.id.esgw_image);
         ImageView qdnt = findViewById(R.id.qdnt_image);
+        ImageView hwll = findViewById(R.id.howell);
 
+        hwll.setVisibility(View.INVISIBLE);
         lect.setVisibility(View.INVISIBLE);
         towc.setVisibility(View.INVISIBLE);
         esgw.setVisibility(View.INVISIBLE);
@@ -693,7 +695,9 @@ public class better extends AppCompatActivity {
         ImageView towc = findViewById(R.id.towc_image);
         ImageView esgw = findViewById(R.id.esgw_image);
         ImageView qdnt = findViewById(R.id.qdnt_image);
+        ImageView hwll = findViewById(R.id.howell);
 
+        hwll.setVisibility(View.INVISIBLE);
         towc.setVisibility(View.INVISIBLE);
         esgw.setVisibility(View.INVISIBLE);
         qdnt.setVisibility(View.INVISIBLE);
@@ -706,7 +710,9 @@ public class better extends AppCompatActivity {
         ImageView towc = findViewById(R.id.towc_image);
         ImageView esgw = findViewById(R.id.esgw_image);
         ImageView qdnt = findViewById(R.id.qdnt_image);
+        ImageView hwll = findViewById(R.id.howell);
 
+        hwll.setVisibility(View.INVISIBLE);
         lect.setVisibility(View.INVISIBLE);
         esgw.setVisibility(View.INVISIBLE);
         qdnt.setVisibility(View.INVISIBLE);
@@ -719,7 +725,9 @@ public class better extends AppCompatActivity {
         ImageView towc = findViewById(R.id.towc_image);
         ImageView esgw = findViewById(R.id.esgw_image);
         ImageView qdnt = findViewById(R.id.qdnt_image);
+        ImageView hwll = findViewById(R.id.howell);
 
+        hwll.setVisibility(View.INVISIBLE);
         lect.setVisibility(View.INVISIBLE);
         towc.setVisibility(View.INVISIBLE);
         qdnt.setVisibility(View.INVISIBLE);
@@ -732,11 +740,28 @@ public class better extends AppCompatActivity {
         ImageView towc = findViewById(R.id.towc_image);
         ImageView esgw = findViewById(R.id.esgw_image);
         ImageView qdnt = findViewById(R.id.qdnt_image);
-        
+        ImageView hwll = findViewById(R.id.howell);
+
+        hwll.setVisibility(View.INVISIBLE);
         lect.setVisibility(View.INVISIBLE);
         towc.setVisibility(View.INVISIBLE);
         esgw.setVisibility(View.INVISIBLE);
         wlfb.setVisibility(View.INVISIBLE);
         qdnt.setVisibility(View.VISIBLE);
+    }
+    public void hwll(View view){
+        ImageView wlfb = findViewById(R.id.wlfb_image);
+        ImageView lect = findViewById(R.id.lect_image);
+        ImageView towc = findViewById(R.id.towc_image);
+        ImageView esgw = findViewById(R.id.esgw_image);
+        ImageView qdnt = findViewById(R.id.qdnt_image);
+        ImageView hwll = findViewById(R.id.howell);
+
+        hwll.setVisibility(View.VISIBLE);
+        lect.setVisibility(View.INVISIBLE);
+        towc.setVisibility(View.INVISIBLE);
+        esgw.setVisibility(View.INVISIBLE);
+        wlfb.setVisibility(View.INVISIBLE);
+        qdnt.setVisibility(View.INVISIBLE);
     }
 }

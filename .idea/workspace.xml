@@ -12,6 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_share.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_share.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +23,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="ce0417140929b4070c" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -84,6 +88,9 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anasz\AndroidStudioProjects\BETTer_17-03\app\src\main\res\drawable-v21" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.better" />
     </key>
@@ -806,7 +813,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585259429907</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="howell theater building png">
+      <created>1585259750797</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1585259750797</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Original map with all buildings coloured png">
+      <created>1585259790387</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1585259790387</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -870,7 +891,9 @@
     <MESSAGE value="Provider class for the password recovery requirement" />
     <MESSAGE value="Bridge class to send an email to the user with its password" />
     <MESSAGE value="I tested the code different times with my email without luck, I believe the problem relies in my laptop as the antivirus is interfering if anyone could try it out and let me know it would be great" />
-    <option name="LAST_COMMIT_MESSAGE" value="I tested the code different times with my email without luck, I believe the problem relies in my laptop as the antivirus is interfering if anyone could try it out and let me know it would be great" />
+    <MESSAGE value="howell theater building png" />
+    <MESSAGE value="Original map with all buildings coloured png" />
+    <option name="LAST_COMMIT_MESSAGE" value="Original map with all buildings coloured png" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

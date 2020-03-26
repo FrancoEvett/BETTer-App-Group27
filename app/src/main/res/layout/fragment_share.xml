@@ -73,10 +73,11 @@
         android:id="@+id/HWLL"
         android:layout_width="91dp"
         android:layout_height="41dp"
-        android:backgroundTint="@color/dark_purple"
-        android:textColor="@android:color/white"
         android:background="@drawable/button_shape"
+        android:backgroundTint="@color/dark_purple"
+        android:onClick="hwll"
         android:text="HWLL"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -175,5 +176,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.501"
         app:srcCompat="@drawable/wilfredbrown" />
+
+    <ImageView
+        android:id="@+id/howell"
+        android:layout_width="417dp"
+        android:layout_height="472dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/esgw_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/howell" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
