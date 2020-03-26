@@ -12,9 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_share.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_share.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -827,7 +825,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585259790387</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added listener to last building and changed the picture of howell theater.. it was smaller than the others">
+      <created>1585260354806</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1585260354806</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -868,7 +873,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="App relocation" />
     <MESSAGE value="Started Timetable adding" />
     <MESSAGE value="Ok guys, it seems to be working now, Pruthvi has just to add a few lines to filter the data and get only Lectures. Try it out and let me know if there is something you'd change" />
     <MESSAGE value="file updated with shared preferences" />
@@ -893,7 +897,8 @@
     <MESSAGE value="I tested the code different times with my email without luck, I believe the problem relies in my laptop as the antivirus is interfering if anyone could try it out and let me know it would be great" />
     <MESSAGE value="howell theater building png" />
     <MESSAGE value="Original map with all buildings coloured png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Original map with all buildings coloured png" />
+    <MESSAGE value="added listener to last building and changed the picture of howell theater.. it was smaller than the others" />
+    <option name="LAST_COMMIT_MESSAGE" value="added listener to last building and changed the picture of howell theater.. it was smaller than the others" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

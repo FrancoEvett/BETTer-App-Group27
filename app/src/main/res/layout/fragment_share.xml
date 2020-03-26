@@ -119,6 +119,7 @@
         android:id="@+id/esgw_image"
         android:layout_width="417dp"
         android:layout_height="472dp"
+        android:onClick="originalmap"
         android:verticalScrollbarPosition="defaultPosition"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,6 +135,7 @@
         android:layout_width="417dp"
         android:layout_height="472dp"
         android:visibility="invisible"
+        android:onClick="originalmap"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/esgw_image"
         app:layout_constraintHorizontal_bias="0.0"
@@ -147,6 +149,7 @@
         android:layout_width="417dp"
         android:layout_height="472dp"
         android:visibility="invisible"
+        android:onClick="originalmap"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/esgw_image"
         app:layout_constraintStart_toStartOf="parent"
@@ -158,6 +161,7 @@
         android:layout_width="417dp"
         android:layout_height="472dp"
         android:visibility="invisible"
+        android:onClick="originalmap"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/esgw_image"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,6 +173,7 @@
         android:layout_width="417dp"
         android:layout_height="472dp"
         android:visibility="invisible"
+        android:onClick="originalmap"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/esgw_image"
         app:layout_constraintHorizontal_bias="0.0"
@@ -182,10 +187,21 @@
         android:layout_width="417dp"
         android:layout_height="472dp"
         android:visibility="invisible"
+        android:onClick="originalmap"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/esgw_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/howell" />
+        app:srcCompat="@drawable/howell2" />
+
+    <ImageView
+        android:id="@+id/originalmap"
+        android:layout_width="417dp"
+        android:layout_height="470dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/esgw_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/originalmap" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
