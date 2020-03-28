@@ -146,13 +146,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="254dp"
-        android:layout_height="29dp"
+        android:layout_width="211dp"
+        android:layout_height="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_up"
-        app:layout_constraintVertical_bias="0.08">
+        app:layout_constraintVertical_bias="0.062">
 
         <androidx.appcompat.widget.AppCompatCheckBox
             android:id="@+id/checkBox"
@@ -163,8 +164,7 @@
             android:id="@+id/textViewTerms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clickable="true"
-            android:focusable="true"
+            android:onClick="terms"
             android:text="Agree to Terms/Conditions"
             android:textColor="@color/cardview_light_background" />
 
