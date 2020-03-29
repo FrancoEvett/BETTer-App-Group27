@@ -8,4 +8,5 @@
     <color name="green">#198C19</color>
     <color name="dark_purple">#301934</color>
     <color name="purple">#800080</color>
+    <color name="errorColor">#FFFFFF</color>
 </resources>

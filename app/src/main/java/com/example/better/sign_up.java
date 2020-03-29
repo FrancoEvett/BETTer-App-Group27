@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -18,8 +19,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
-
-import org.w3c.dom.Text;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class sign_up extends AppCompatActivity {
@@ -63,6 +62,8 @@ public class sign_up extends AppCompatActivity {
         dialog.show();
     }
 
+
+
     public void signNewAccount(View view){
         EditText ID = findViewById(R.id.studentID);
         EditText pass = findViewById(R.id.firstpassword);
@@ -70,6 +71,7 @@ public class sign_up extends AppCompatActivity {
         EditText username = findViewById(R.id.userName);
         EditText useremail = findViewById(R.id.userEmail);
         TextView message = findViewById(R.id.textView11);
+        CheckBox checkbx = findViewById(R.id.checkBox);
         String id = ID.getText().toString();
         String userName = username.getText().toString();
         String userEmail = useremail.getText().toString();
@@ -78,7 +80,6 @@ public class sign_up extends AppCompatActivity {
         ID.setText("");
         pass.setText("");
         repass.setText("");
-
 
 
         if(((password == null) || (password.isEmpty() == true))  || ((userEmail == null) || (userEmail.isEmpty() == true) ||  ((userName == null) || (userName.isEmpty() ==true)) || (token == null))){
@@ -91,7 +92,7 @@ public class sign_up extends AppCompatActivity {
 
         else {
             if (password.equals(repeatpass) == true) {
-                if (userAccountControll.CreateNewAccount(id, userName, userEmail, password,token)) {
+                if ((checkbx.isChecked()) && (userAccountControll.CreateNewAccount(id, userName, userEmail, password,token))) {
 
                     Intent intent = new Intent(this, MainActivity.class);
                     startActivity(intent);
@@ -121,5 +122,8 @@ public class sign_up extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void terms(View view) {
+        Intent intent = new Intent(this, terms_page.class);
+        startActivity(intent);
+    }
 }
