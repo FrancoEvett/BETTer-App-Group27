@@ -11,11 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_send.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_send.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -862,7 +859,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585261569682</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Guys I got rid of SharedPreferences as it was giving me too many issues, luckily I found an alternative which is SQLite! We can finally say that the Lab feature is complete and fully operative">
+      <created>1585517069461</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1585517069461</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -894,7 +898,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Franco, please read my comments" />
     <MESSAGE value="Error in signup due to method not being found" />
     <MESSAGE value="Imported Class to Prevent Error in the DatabaseConrollerForUsers Class" />
     <MESSAGE value="Changes Some Structure in Database Bridge" />
@@ -919,7 +922,8 @@
     <MESSAGE value="MAP FEATURE FULLY COMPLETE pt. 2&#10;sorry had to fix some issues" />
     <MESSAGE value="logout page is fixed" />
     <MESSAGE value="logout image" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout image" />
+    <MESSAGE value="Guys I got rid of SharedPreferences as it was giving me too many issues, luckily I found an alternative which is SQLite! We can finally say that the Lab feature is complete and fully operative" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guys I got rid of SharedPreferences as it was giving me too many issues, luckily I found an alternative which is SQLite! We can finally say that the Lab feature is complete and fully operative" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -938,7 +942,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/better/sign_up.java</url>
-          <line>83</line>
+          <line>84</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
