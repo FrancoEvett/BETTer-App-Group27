@@ -45,10 +45,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_send"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <Button
         android:id="@+id/yes"
@@ -65,4 +65,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.619" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

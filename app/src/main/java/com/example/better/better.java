@@ -3,12 +3,18 @@ import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+
+import com.example.better.ui.DatabaseHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+
+import android.preference.PreferenceManager;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import androidx.annotation.RequiresApi;
 import androidx.navigation.NavController;
@@ -43,6 +49,8 @@ public class better extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     public static TextView displayTimetable;
+    DatabaseHelper mDatabaseHelper;
+    Context ctx = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +62,7 @@ public class better extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
+        mDatabaseHelper = new DatabaseHelper(getApplicationContext());
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
                 R.id.nav_tools, R.id.nav_share, R.id.nav_send)
@@ -86,39 +95,15 @@ public class better extends AppCompatActivity {
         Displayatbeg();
     }
 
-//    public static final String MyPREFERENCES = "com.example.labs" ;
-//    public static final String Lab1 = "l1key";
-//    public static final String Lab2 = "l2key";
-//    public static final String Lab3 = "l3key";
-//    public static final String Lab4 = "l4key";
-//    public static final String Lab5 = "l5key";
-//
-//    public int l1;
-//    public int l2;
-//    public int l3;
-//    public int l4;
-//    public int l5;
-
-    SharedPreferences sharedpreferences;
-
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
-                displayTimetable.append(activity + "\n" + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n"
-                + "----------------------------------------------------------------------------------" + "\n\n");
-
+        ArrayList<String> labs = mDatabaseHelper.getData();
+        if (activity.contains("Lecture") == true || activity.contains(labs.get(0)) == true || activity.contains(labs.get(1)) == true || activity.contains(labs.get(2)) == true ||
+        activity.contains(labs.get(3)) == true || activity.contains(labs.get(4)) == true) {
+            displayTimetable.append(activity + "\n" + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n"
+                    + "----------------------------------------------------------------------------------" + "\n\n");
+        }
     }
-
-//    public void Set_Preferences(){
-//        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedpreferences.edit();
-//        editor.putInt(Lab1,l1);
-//        editor.putInt(Lab2,l2);
-//        editor.putInt(Lab3,l3);
-//        editor.putInt(Lab4,l4);
-//        editor.putInt(Lab5,l5);
-//        editor.apply();
-//    }
-
     public void exit (View view){
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);
@@ -582,34 +567,37 @@ public class better extends AppCompatActivity {
 
     public void Enter (View view){
         int empty=0;
+        mDatabaseHelper.resetTable();
         EditText cs1 = findViewById(R.id.editText);
         EditText cs2 = findViewById(R.id.editText2);
         EditText cs3 = findViewById(R.id.editText3);
         EditText cs4 = findViewById(R.id.editText4);
         EditText cs5 = findViewById(R.id.editText5);
         TextView display = findViewById(R.id.textView2);
-//
-//            if (getLab1() != empty && getLab2() != empty && getLab3() != empty && getLab4() != empty && getLab5() != empty) {
-//                display.setText(getLab1()+" "+getLab2()+" "+getLab3()+" "+getLab4()+" "+getLab5());
-//            }
             try {
                 int l1 = Integer.parseInt(cs1.getText().toString());
                 int l2 = Integer.parseInt(cs2.getText().toString());
                 int l3 = Integer.parseInt(cs3.getText().toString());
                 int l4 = Integer.parseInt(cs4.getText().toString());
                 int l5 = Integer.parseInt(cs5.getText().toString());
-//
-//                sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-//                SharedPreferences.Editor editor = sharedpreferences.edit();
-//                editor.putInt(Lab1,l1);
-//                editor.putInt(Lab2,l2);
-//                editor.putInt(Lab3,l3);
-//                editor.putInt(Lab4,l4);
-//                editor.putInt(Lab5,l5);
-//                editor.apply();
-//                Set_Preferences(c1,c2,c3,c4,c5);
+                if(cs1 != null && cs2 != null && cs3 != null && cs4 != null && cs5 != null) {
+                    boolean insertData = mDatabaseHelper.addData("Lab " + l1);
+                    boolean insertData1 = mDatabaseHelper.addData("Lab " + l2);
+                    boolean insertData2 = mDatabaseHelper.addData("Seminar " + l3);
+                    boolean insertData3 = mDatabaseHelper.addData("Lab " + l4);
+                    boolean insertData4 = mDatabaseHelper.addData("Lab " + l5);
+                    if(insertData == true && insertData1 == true && insertData2 == true && insertData3 == true && insertData4 == true){
+                        display.setText("Lab "+ l1 +" Lab "+ l2+" Seminar "+l3+" Lab "+l4+" Lab "+l5);
+                    }
+                    else {
+                        display.setText("Data were not added! Please try again");
+                    }
+                }
+                else {
+                    display.setText("Enter something please! Don't leave blank boxes");
+                }
             } catch (Exception e){
-                display.setText("Enter something please");
+                display.setText("Enter something please! Don't leave blank boxes");
             }
     }
 
@@ -631,50 +619,6 @@ public class better extends AppCompatActivity {
         tv2.setMovementMethod(new ScrollingMovementMethod());
         tv2.setText(R.string.privacy_policy2);
     }
-
-//    public void SetLabs(int c1, int c2, int c3, int c4, int c5){
-//        try {
-//            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-//            SharedPreferences.Editor editor = preference.edit();
-//            editor.putInt("CS2001", c1);
-//            editor.putInt("CS2002", c2);
-//            editor.putInt("CS2003", c3);
-//            editor.putInt("CS2004", c4);
-//            editor.putInt("CS2005", c5);
-//            editor.apply();
-//        }catch (Exception e){
-//            TextView display = findViewById(R.id.textView2);
-//            display.setText("ERROR idiot try again!");
-//        }
-//    }
-
-//    public int getLab1(){
-//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-//        int Lab2001 = preference.getInt("CS2001", 0);
-//        return Lab2001;
-//    }
-//        public int getLab2(){
-//            SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-//        int Lab2002 = preference.getInt("CS2002", 0);
-//        return Lab2002;
-//    }
-//        public int getLab3(){
-//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-//        int Lab2003 = preference.getInt("CS2003", 0);
-//        return Lab2003;
-//    }
-//        public int getLab4(){
-//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-//        int Lab2004 = preference.getInt("CS2004", 0);
-//        return Lab2004;
-//    }
-//        public int getLab5(){
-//        SharedPreferences preference = getSharedPreferences("com.example.labs", Context.MODE_PRIVATE);
-//        int Lab2005 = preference.getInt("CS2001", 0);
-//        return Lab2005;
-//    }
-
-
 
     public void wlfb (View view){
         ImageView wlfb = findViewById(R.id.wlfb_image);
