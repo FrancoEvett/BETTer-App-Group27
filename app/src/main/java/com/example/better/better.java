@@ -1,20 +1,11 @@
 package com.example.better;
-import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 
-import com.example.better.ui.DatabaseHelper;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.preference.PreferenceManager;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.View;
 import androidx.annotation.RequiresApi;
 import androidx.navigation.NavController;
@@ -26,16 +17,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.ScrollView;
 import android.widget.Switch;
 import android.widget.TextView;
-import java.text.DateFormat;
+
 import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -51,7 +39,6 @@ public class better extends AppCompatActivity {
     public static TextView displayTimetable;
     DatabaseHelper mDatabaseHelper;
     Context ctx = this;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +49,7 @@ public class better extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        mDatabaseHelper = new DatabaseHelper(getApplicationContext());
+        mDatabaseHelper = new DatabaseHelper(ctx);
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
                 R.id.nav_tools, R.id.nav_share, R.id.nav_send)
@@ -97,13 +84,10 @@ public class better extends AppCompatActivity {
 
     //Displaying the timetable info from here
     public void displayMethod(String activity, String description, String start, String end, String room) {
-        ArrayList<String> labs = mDatabaseHelper.getData();
-        if (activity.contains("Lecture") == true || activity.contains(labs.get(0)) == true || activity.contains(labs.get(1)) == true || activity.contains(labs.get(2)) == true ||
-        activity.contains(labs.get(3)) == true || activity.contains(labs.get(4)) == true) {
             displayTimetable.append(activity + "\n" + description + "\n" + "Start: " + start + "\n" + "End: " + end + "\n" + "Room: " + room + "\n"
                     + "----------------------------------------------------------------------------------" + "\n\n");
-        }
     }
+
     public void exit (View view){
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(1);
@@ -581,11 +565,11 @@ public class better extends AppCompatActivity {
                 int l4 = Integer.parseInt(cs4.getText().toString());
                 int l5 = Integer.parseInt(cs5.getText().toString());
                 if(cs1 != null && cs2 != null && cs3 != null && cs4 != null && cs5 != null) {
-                    boolean insertData = mDatabaseHelper.addData("Lab " + l1);
-                    boolean insertData1 = mDatabaseHelper.addData("Lab " + l2);
-                    boolean insertData2 = mDatabaseHelper.addData("Seminar " + l3);
-                    boolean insertData3 = mDatabaseHelper.addData("Lab " + l4);
-                    boolean insertData4 = mDatabaseHelper.addData("Lab " + l5);
+                    boolean insertData = mDatabaseHelper.addData("CS2001 Lab " + l1);
+                    boolean insertData1 = mDatabaseHelper.addData("CS2002 Lab " + l2);
+                    boolean insertData2 = mDatabaseHelper.addData("CS2003 Seminar " + l3);
+                    boolean insertData3 = mDatabaseHelper.addData("CS2004 Lab " + l4);
+                    boolean insertData4 = mDatabaseHelper.addData("CS2005 Lab " + l5);
                     if(insertData == true && insertData1 == true && insertData2 == true && insertData3 == true && insertData4 == true){
                         display.setText("Lab "+ l1 +" Lab "+ l2+" Seminar "+l3+" Lab "+l4+" Lab "+l5);
                     }

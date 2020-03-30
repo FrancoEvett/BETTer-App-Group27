@@ -127,4 +127,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText5"
         app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="261dp"
+        android:layout_height="124dp"
+        android:text="Please be aware that if you are changing your sequence after already setting a different one previously the app will need to be restarted in order for the new labs to show on the home page! Thank you"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.901" />
 </androidx.constraintlayout.widget.ConstraintLayout>

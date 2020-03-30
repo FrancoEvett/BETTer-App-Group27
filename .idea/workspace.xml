@@ -12,7 +12,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3107807a-0161-45f1-9b70-df23a17bf282" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/BackgroundTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/better.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/better/ui/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/better/DatabaseHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_tools.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,12 +53,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>databaseBridge</find>
-      <find>check_info</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -85,8 +83,9 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\anasz\AndroidStudioProjects\BETTer_17-03\app\src\main\res\drawable-v21" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MagerXser\Documents\BETTer-App-Group27\app\src\main\res\drawable-hdpi" />
+      <recent name="C:\Users\MagerXser\Documents\BETTer-App-Group27\app\src\main\res\drawable" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.better" />
@@ -97,9 +96,8 @@
     <key name="android.template.parentActivityClass">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MagerXser\Documents\BETTer-App-Group27\app\src\main\res\drawable-hdpi" />
-      <recent name="C:\Users\MagerXser\Documents\BETTer-App-Group27\app\src\main\res\drawable" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\anasz\AndroidStudioProjects\BETTer_17-03\app\src\main\res\drawable-v21" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -866,7 +864,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585517069461</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="small changes">
+      <created>1585517625807</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1585517625807</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -898,7 +903,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Error in signup due to method not being found" />
     <MESSAGE value="Imported Class to Prevent Error in the DatabaseConrollerForUsers Class" />
     <MESSAGE value="Changes Some Structure in Database Bridge" />
     <MESSAGE value="Revetrted Changes" />
@@ -923,17 +927,12 @@
     <MESSAGE value="logout page is fixed" />
     <MESSAGE value="logout image" />
     <MESSAGE value="Guys I got rid of SharedPreferences as it was giving me too many issues, luckily I found an alternative which is SQLite! We can finally say that the Lab feature is complete and fully operative" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guys I got rid of SharedPreferences as it was giving me too many issues, luckily I found an alternative which is SQLite! We can finally say that the Lab feature is complete and fully operative" />
+    <MESSAGE value="small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/better/MainActivity.java</url>
-          <line>46</line>
-          <properties class="com.example.better.MainActivity" />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/better/forgot_password.java</url>
           <line>28</line>

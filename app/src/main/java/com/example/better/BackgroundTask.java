@@ -1,5 +1,6 @@
 package com.example.better;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -19,12 +20,15 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.ArrayList;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class BackgroundTask extends AsyncTask<String, Void, String> {
-
+    DatabaseHelper mDatabaseHelper;
     //context
+
     Context context;
+
     String paredString = "";
     String fullString = "";
     String initial = "";
@@ -84,18 +88,22 @@ public class BackgroundTask extends AsyncTask<String, Void, String> {
 
 
                     //Passing the variables to displayMethod class
-                    objBetter.displayMethod( Activity,Description,Start,End,Room);
+                    //Anas's code implemented here to simplify and reduce the number of activities sent ot better class
+                    mDatabaseHelper = new DatabaseHelper(context);
+                    ArrayList<String> labs = mDatabaseHelper.getData();
+                    if (Activity.contains("Lecture") == true || Activity.contains(labs.get(0)) == true || Activity.contains(labs.get(1)) == true || Activity.contains(labs.get(2)) == true ||
+                            Activity.contains(labs.get(3)) == true || Activity.contains(labs.get(4)) == true) {
+                        objBetter.displayMethod(Activity, Description, Start, End, Room);
+                    }
                 }
 
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
         }
 
         return null;
     }
-
 
 //posing the results
 

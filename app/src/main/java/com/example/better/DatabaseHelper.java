@@ -1,4 +1,4 @@
-package com.example.better.ui;
+package com.example.better;
 
 import android.content.ContentValues;
 import android.content.Context;
