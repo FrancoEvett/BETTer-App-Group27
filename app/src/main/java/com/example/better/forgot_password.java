@@ -26,26 +26,27 @@ String email = "BETTer@brunel.ac.uk";
         dialog.show();
     }
 
-    public void forgot_pass (View view){
-        EditText em = findViewById(R.id.email);
-        TextView mex = findViewById(R.id.textView12);
-        String usermail = em.getText().toString();
-        if (!usermail.equals("") == true) {
-            try {
-                GMailSender sender = new GMailSender("better.group27@gmail.com", "BETTer_27");
-                sender.sendMail("This is Subject",
-                        "Your password is: ",
-                        "better.group27@gmail.com",
-                        usermail);
-                mex.setText("Thanks! your request has been received, please check your email for the next step");
-            } catch (Exception e) {
-                Log.e("SendMail", e.getMessage(), e);
-                mex.setText("The email is not recognised");
-            }
-        }
-        else {
-            mex.setText("Enter your email please!");
-        }
+//    Anas is working on this class please leave it commented. Do not change anything.
+//    //public void forgot_pass (View view){
+//        EditText em = findViewById(R.id.email);
+//        TextView mex = findViewById(R.id.textView12);
+//        String usermail = em.getText().toString();
+//        if (!usermail.equals("") == true) {
+//            try {
+//                //GMailSender sender = new GMailSender("better.group27@gmail.com", "BETTer_27");
+//              //  sender.sendMail("This is Subject",
+//                        "Your password is: ",
+//                        "better.group27@gmail.com",
+//                        usermail);
+//                mex.setText("Thanks! your request has been received, please check your email for the next step");
+//            } catch (Exception e) {
+//                Log.e("SendMail", e.getMessage(), e);
+//                mex.setText("The email is not recognised");
+//            }
+//        }
+//        else {
+//            mex.setText("Enter your email please!");
+//        }
 
 
 //            Intent i = new Intent(Intent.ACTION_SEND);
@@ -65,9 +66,11 @@ String email = "BETTer@brunel.ac.uk";
 //            // Invalid email Error Message
 //        }
     }
+/*
 
     public void back (View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
+*/

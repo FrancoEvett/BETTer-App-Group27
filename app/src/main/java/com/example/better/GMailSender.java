@@ -1,3 +1,7 @@
+/*
+
+Anas is working on this class please leave it commented. Do not change anything.
+
 package com.example.better;
 import com.google.android.datatransport.Transport;
 import java.io.ByteArrayInputStream;
@@ -111,3 +115,4 @@ public class GMailSender extends Authenticator {
         }
     }
 }
+*/
