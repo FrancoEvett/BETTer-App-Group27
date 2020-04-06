@@ -17,6 +17,17 @@ public class terms_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup_terms);
+        TextView tv = (TextView) findViewById(R.id.textView13);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            tv.setTextColor(getResources().getColor(R.color.errorColor, getResources().newTheme()));
+        }
+        tv.setText(R.string.agree);
+        TextView bv = (TextView) findViewById(R.id.textView14);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            bv.setTextColor(getResources().getColor(R.color.errorColor, getResources().newTheme()));
+            bv.setText(R.string.terms);
+        }
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -56,7 +67,7 @@ public class terms_page extends AppCompatActivity {
     }
 
     public void back (View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, sign_up.class);
         startActivity(intent);
     }
 
