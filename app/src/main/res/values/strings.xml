@@ -18,9 +18,27 @@
     <string name="terms_service">Terms of Service</string>
     <string name="privacy">Privacy Policy</string>
     <string name="agree">AGREEMENT TO TERMS</string>
+    <string name="agree_terms"><u>Agree To Terms</u></string>
     <string name="privacy_policy">Last updated 28th, February 2020</string>
     <string name="privacy_policy1">INTRODUCTION</string>
     <string name="privacy_policy2">BETTer (“we” or “us” or “our”) respects the privacy of our users (“user” or “you”). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website BETTer.com, BETTer app, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site. We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the “Last Updated” date of this Privacy Policy. Any changes or modifications will be effective immediately upon posting the updated Privacy Policy on the Site, and you waive the right to receive specific notice of each such change or modification.
 You are encouraged to periodically review this Privacy Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Privacy Policy by your continued use of the Site after the date such revised Privacy Policy is posted.</string>
-    <string name="terms">These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and BETTer (“we,” “us” or “our”), concerning your access to and use of our mobile application (the “Application”). You agree that by accessing the Application, you have read, understood, and agree to be bound by all of these Terms and Conditions Use. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS AND CONDITIONS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE APPLICATION AND YOU MUST DISCONTINUE USE IMMEDIATELY. Supplemental terms and conditions or documents that may be posted on the Application from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Terms and Conditions at any time and for any reason. We will alert you about any changes by updating the “Last updated” date of these Terms and Conditions and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Terms and Conditions to stay informed of updates. You will be subject to, and will be deemed to have been made aware of and to have accepted, the changes in any revised Terms and Conditions by your continued use of the Application after the date such revised Terms are posted. The information provided on the Application is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Application from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.</string>
+    <string name="terms"> We as the developers of this app need to collect data about students in order for this app to function. Where this information comprises personal data, us as the developers must comply with the principles set out in the General Data Protection Regulation (GDPR) and the provisions contained in the Data Protection Act 2018.
+    Personal Data
+    Your data can only be processed in the following circumstances:
+    1.	with the consent of the individual;
+    2.	compliance with a legal obligation;
+    3.	for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller; or
+    4.	for the legitimate interests of the data controller or a third party, unless prejudicial to the interests of the individual.
+    Agreement
+    1.	These Terms and Conditions apply to the developers of the app and the person using the Service.
+    2.	We will not share your data with third parties.
+    3.	We will not use your data for longer than necessary.
+    4.	Your data shall be processed lawfully, fairly and in a transparent manner.
+    5.	Your data shall be collected for specified, explicit and legitimate lawful purposes and shall not be further processed in any manner incompatible with those purposes;
+    6.	Your data shall be adequate, relevant, and limited to what is necessary in relation to the purposes for which they are processed;
+    7.	Your data shall be kept in a form which permits identification of individuals for no longer than is necessary for the purposes for which the personal data are processed;
+    8.	Your data shall be processed in a manner that ensures appropriate security of the personal data.
+    9.	Subject to your acceptance of this agreement you are of your own will sharing your data and will be able to use this app.
+</string>
 </resources>
